@@ -1,2 +1,2 @@
 # project
-Final project
+Final project README
