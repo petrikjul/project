@@ -1,0 +1,125 @@
+$white: #FFFFFF;
+$orange: #eeb501;
+$black: #000;
+$brown: #1e0404;
+$grey: #4f4f4f;
+$extrabold: 800;
+$bold: 700;
+$regylar: 400;
+$italic: 600 italic;
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+%for-a {
+	a {		
+		color: $white;
+	    text-decoration: none;
+	}
+    a:hover {
+        color: $orange;
+        text-decoration: none;
+    }
+}
+
+%for-p {
+	font:{
+		size: 20px;
+	    weight: $regylar;
+    }
+	color: $white;
+	margin-bottom: 0;
+	line-height: 35px;
+}
+
+span {
+    font-size: 30px;	
+	font-style: italic;
+	color: $white; 
+}
+
+%for-h1 {
+	font:{	   
+	   size: 124px;	
+	   weight: $extrabold;
+    }
+    line-height: 115px;
+    color: $orange;
+    margin: 0;
+}
+
+%for-h2 {
+	font:{
+	    size: 68px;	
+	    weight: $extrabold;
+    }
+    line-height: 87px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: $white;
+}
+
+%for-h3 {
+	font:{
+	   size: 25px;	
+	   weight: $bold;
+    }
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: $brown;
+}
+
+%for-buttons {
+	font:{	   
+	    size: 21px;	
+	    weight: $bold;
+	}
+	text-transform: uppercase;
+	padding: 10px 45px;
+    border: 2px solid $white;
+	display: inline-block;
+	margin-bottom: 0;	
+}
+
+@mixin desktop {
+  @media (min-width: 1370px) {
+    @content;
+  }
+}
+@mixin laptop-plus {
+  @media (min-width: 1200px) and (max-width: 1369px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}  
+@mixin phone {
+  @media (min-width: 320px) and (max-width: 767px) {
+    @content;
+  }
+} 
+@mixin iphone {
+  @media (max-width: 319px) {
+    @content;
+  }
+}
