@@ -1,0 +1,37 @@
+.container {
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+.header {
+    background-color: $white;
+    nav {
+      padding-top: 15px;
+    }
+    .header__nav_menu {
+      list-style: none;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      font:{
+        family: 'GothamProMedium';
+        size: 15px;
+      }
+      color: $black;
+      line-height: 15px;
+      &_menu-li {
+      @extend %for-a;
+        margin-left: 30px;
+      }
+    }
+}
+.header__btn {
+   @extend %for-a;
+  display: flex;
+   .header__btn_buttons {
+     @extend %for-buttons;
+
+   }
+}

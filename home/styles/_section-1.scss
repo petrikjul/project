@@ -1,0 +1,8 @@
+.section-1 {
+   background-image: url("../img/fon-section-1.png");
+   background-size: cover;
+}
+
+.text-lorem {
+  @extend %for-p;
+}
