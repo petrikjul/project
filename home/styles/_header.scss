@@ -1,5 +1,4 @@
-.container {
-  align-items: center;
+.header-top__container {
   padding-top: 35px;
   padding-bottom: 40px;
 }
@@ -32,6 +31,5 @@
   display: flex;
    .header__btn_buttons {
      @extend %for-buttons;
-
    }
 }

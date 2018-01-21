@@ -3,6 +3,50 @@
    background-size: cover;
 }
 
-.text-lorem {
-  @extend %for-p;
+.general-page__container {
+  margin: 0 auto;
+  width: 65%;
+  padding-top: 220px;
+  padding-bottom: 160px;
 }
+
+.general-page__text {
+  &_main {
+    @extend %for-p;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_topic {
+    @extend %for-h1;
+  }
+}
+
+
+.general-page__btn {
+  justify-content: center;
+  flex-direction: row;
+  @extend %for-a;
+  a:hover {
+    color: $white;
+    background-color: $activ-botton;
+    text-decoration: none;
+  }
+  display: flex;
+  &_buttons-left {
+    @extend %for-buttons;
+    background-color: $white;
+    margin-left: 15px;
+  }
+
+  &_buttons-right {
+    @extend %for-buttons;
+    background-color: $white;
+    margin-right: 15px;
+  }
+
+}
+
