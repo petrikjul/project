@@ -20,18 +20,17 @@ html, body {
 		color: $black;
 	    text-decoration: none;
 	}
-    a:hover {
+  a:hover {
         color: $black;
         text-decoration: none;
-    }
+  }
 }
 
 %for-p {
 	font:{
         family: 'GothamProRegular';
-		size: 17px;
-
-    }
+		    size: 17px;
+  }
 	color: $black;
 	margin-bottom: 0;
 	line-height: 26px;
@@ -45,10 +44,12 @@ span {
 
 %for-h1 {
 	font:{
-      family: 'FjallaOneRegular';
+     family: 'FjallaOneRegular';
 	   size: 80px;
 	   weight: $extrabold;
     }
+    text-transform: uppercase;
+    letter-spacing: 6px;
     line-height: 90px;
     color: $black;
     margin: 0;
@@ -68,14 +69,14 @@ span {
 
 %for-h3 {
 	font:{
-      family: 'FjallaOneRegular';
+     family: 'FjallaOneRegular';
 	   size: 25px;	
 	   weight: $bold;
     }
     line-height: 25px;
     margin-bottom: 0;
     margin-top: 0;
-    color: $brown;
+  color: $black;
 }
 
 %for-buttons {
@@ -88,6 +89,15 @@ span {
   padding: 12px 30px;
   background-color: $activ-botton;
   margin-bottom: 0;
+}
+
+%for-ul {
+  ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
 }
 
 @mixin desktop {

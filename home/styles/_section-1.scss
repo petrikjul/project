@@ -5,9 +5,10 @@
 
 .general-page__container {
   margin: 0 auto;
-  width: 65%;
+  padding-left: 110px;
+  padding-right: 110px;  
   padding-top: 220px;
-  padding-bottom: 160px;
+  padding-bottom: 30px;
 }
 
 .general-page__text {
@@ -18,15 +19,18 @@
     text-align: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 65px;
   }
 
   &_topic {
     @extend %for-h1;
-  }
+    font-weight: $light;
+    padding-bottom: 35px;
+    }
 }
 
-
 .general-page__btn {
+  padding-bottom: 162px;
   justify-content: center;
   flex-direction: row;
   @extend %for-a;
@@ -47,6 +51,26 @@
     background-color: $white;
     margin-right: 15px;
   }
-
 }
 
+.general-page__mouse {
+  padding-bottom: 28px;
+}
+
+.general-page__container_buttons-vertical {
+  position: absolute;
+  right: -34px;
+  transform: rotate(-90deg);
+  @extend %for-a;
+  @extend %for-buttons;
+  color: $black;
+  background-color: $white;
+  &:hover {
+    color: $white;
+    background-color: $activ-botton;
+    text-decoration: none;
+  }
+  .icon-forma {
+    transform: rotate(90deg);
+  }
+}

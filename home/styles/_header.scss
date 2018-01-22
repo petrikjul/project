@@ -8,28 +8,72 @@
     nav {
       padding-top: 15px;
     }
-    .header__nav_menu {
-      list-style: none;
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-      display: flex;
-      font:{
-        family: 'GothamProMedium';
-        size: 15px;
-      }
-      color: $black;
-      line-height: 15px;
-      &_menu-li {
-      @extend %for-a;
-        margin-left: 30px;
-      }
-    }
 }
-.header__btn {
-   @extend %for-a;
+
+.header__nav_menu {
+  @extend %for-ul;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
-   .header__btn_buttons {
-     @extend %for-buttons;
-   }
+  font: {
+    family: 'GothamProMedium';
+    size: 15px;
+  }
+  color: $black;
+  line-height: 15px;
 }
+
+.header__nav_menu_menu-li {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  @extend %for-a;
+}    
+
+.header__nav_menu_menu-li:hover {
+  .submenu {
+    display: block;
+  }
+}
+
+.choice {    
+  display: block;
+}
+  
+.submenu {
+  @extend %for-ul;
+  display: none;
+  position: absolute;
+  width: 120px;
+  top: 15px;
+  padding-left: 0;
+  background-color: white;
+  text-align: center;
+}
+
+.submenu-li {
+  display: block;
+  @extend %for-a;
+  border-bottom: 1px solid $grey-light;
+}
+
+.submenu-a {      
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: $white;
+  text-decoration: none;
+}
+
+.header__btn {
+  @extend %for-a;
+  display: flex;
+  .header__btn_buttons {
+    @extend %for-buttons;
+  }
+}
+
+
+
