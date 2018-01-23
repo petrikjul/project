@@ -7,8 +7,9 @@
   margin: 0 auto;
   padding-left: 110px;
   padding-right: 110px;  
-  padding-top: 220px;
-  padding-bottom: 30px;
+  padding-top: 205px;
+  padding-bottom: 10px;
+  position: relative;
 }
 
 .general-page__text {
@@ -20,17 +21,17 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 65px;
+    font-weight: $medium-plus;
   }
-
   &_topic {
     @extend %for-h1;
     font-weight: $light;
-    padding-bottom: 35px;
-    }
+    padding-bottom: 20px;
+  }
 }
 
 .general-page__btn {
-  padding-bottom: 162px;
+  padding-bottom: 57px;
   justify-content: center;
   flex-direction: row;
   @extend %for-a;
@@ -53,24 +54,114 @@
   }
 }
 
-.general-page__mouse {
-  padding-bottom: 28px;
-}
-
+/* button vertical right*/
 .general-page__container_buttons-vertical {
   position: absolute;
-  right: -34px;
+  right: -65px;
   transform: rotate(-90deg);
   @extend %for-a;
   @extend %for-buttons;
-  color: $black;
-  background-color: $white;
+  color: $white;
+  background-color: $activ-botton;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   &:hover {
     color: $white;
-    background-color: $activ-botton;
+    background-color: $activ-botton-opacity;
     text-decoration: none;
   }
   .icon-forma {
     transform: rotate(90deg);
   }
 }
+ 
+/* scroll mouse */ 
+#mice { 
+  margin: 0 auto;
+  padding-bottom: 8em;
+   padding-top: 5.5em;
+   text-align: center;
+   width: 20px;
+    height: 9px; 
+  }
+
+#mice span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid $black;
+  border-bottom: 2px solid $black;
+  margin: 5px 0 3px 6px;
+}
+
+.unu
+{
+  margin-top: 6px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouse {
+    height: 30px;
+    width: 22px;
+    border-radius: 10px;
+    transform: none;
+    border: 2px solid $black;
+    top: 170px;
+}
+.wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 7px auto;
+    background: $black;
+    position: relative;
+}
+
+/* media query  */
+@include desktop {
+
+}
+
+@include laptop {
+  
+}    
+
+@include tablet {
+
+}
+
+ @include phone {
+
+}
+ @include iphone {
+ }

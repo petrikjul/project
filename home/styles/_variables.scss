@@ -100,13 +100,9 @@ span {
 }
 }
 
+
 @mixin desktop {
-  @media (min-width: 1370px) {
-    @content;
-  }
-}
-@mixin laptop-plus {
-  @media (min-width: 1200px) and (max-width: 1369px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
