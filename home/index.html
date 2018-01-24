@@ -14,11 +14,9 @@
     <header class="header header-top">
 	    <div class="container header-top__container">
 		    <div class="row">
-			     <div class="col-md-2">
-				      <a class="logotype" href="#"><img class="logo" src="img/logo.png"></a>
-			     </div>
-                 <nav class="col-md-8" id="navMenu">
-				     <ul class="header__nav_menu">
+			     <nav class="col-md d-flex" id="navMenu">
+				     <ul class="header__nav_menu justify-content-between">
+				     	<li class="header__nav_menu_menu-li header__logo"><a class="logotype" href="#"><img class="logo" src="img/logo.png"></a></li>
 					      <li class="header__nav_menu_menu-li"><a class="choice" href="#company">Company <img class="icon-pointer" src="img/icon-pointer.png"></a>
 					      	   <ul class="submenu">
                                    <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
@@ -43,11 +41,9 @@
 					      </li>
 					      <li class="header__nav_menu_menu-li"><a class="choice" href="#contact">Contact</a></li>
 					      <li class="header__nav_menu_menu-li hidden-sm hidden-md hidden-lg hidden-xl"><a class="choice" href="#"><img class="icon-menu" src="img/byrger.png"></a></li>
+					      <li class="header__nav_menu_menu-li header__btn"><a href="#" class="header__btn_buttons">Click here</a></li>
 				     </ul>
                  </nav>
-			     <div class="col-md-2 header__btn text-right">
-				     <a href="#" class="header__btn_buttons">Click here</a>
-			     </div>
 			</div>
 		</div>
     </header>
@@ -56,19 +52,19 @@
 	<div class="section-1 general-page" id="company">
 		<div class="container general-page__container">
 			<div class="row">
-				<div class="col-md col-sm general-page__buttons-vertical pull-right">
+				<div class="col-md general-page__buttons-vertical pull-right">
 					<a href="#" class="col-md-2 general-page__container_buttons-vertical">get help  <img class="icon-forma" src="img/icon-forma.png"></a>
 				</div>
-				<div class="col-md col-sm general-page__text text-center">	
+				<div class="col-md general-page__text d-flex flex-column justify-content-center text-center">
 			 		<h1 class="general-page__text_topic">We lead our customers to success</h1>
                     
-					<p class="general-page__text_main">
+					<p class="general-page__text_main flex-column align-items-center">
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 					</p>
 
-				    <div class="col-md col-sm general-page__btn text-center">
-					   <a href="#" class="col-md-2 general-page__btn_buttons-right">Portfolio</a>
-					   <a href="#" class="col-md-2 general-page__btn_buttons-left">Start a project</a>
+				    <div class="col-md general-page__text_btn">
+					   <a href="#" class="col-md-3 general-page__text_btn_buttons-right">Portfolio</a>
+					   <a href="#" class="col-md-3 general-page__text_btn_buttons-left">Start a project</a>
 				    </div>
 
 				    <div id="mice">
