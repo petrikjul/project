@@ -17,9 +17,6 @@
     @extend %for-p;
     padding-left: 70px;
     padding-right: 70px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 65px;
     font-weight: $medium-plus;
   }
@@ -30,23 +27,21 @@
   }
 }
 
-.general-page__btn {
+.general-page__text_btn {
   padding-bottom: 57px;
+  display: flex;
   justify-content: center;
-  flex-direction: row;
   @extend %for-a;
   a:hover {
     color: $white;
     background-color: $activ-botton;
     text-decoration: none;
   }
-  display: flex;
   &_buttons-left {
     @extend %for-buttons;
     background-color: $white;
     margin-left: 15px;
   }
-
   &_buttons-right {
     @extend %for-buttons;
     background-color: $white;
