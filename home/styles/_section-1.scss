@@ -142,17 +142,75 @@
     position: relative;
 }
 
-/* media query  */
+/* ------------ media query --------------- */
 @include desktop {
-
+  .general-page__text_btn {
+    &_buttons-left {
+      width: 19%;
+    }
+    &_buttons-right {
+      width: 19%;
+    }
+  }
 }
 
 @include laptop {
-  
-}    
+  .general-page__text {
+    &_main {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 65px;
+      }
+    &_topic {
+      font-size: 50px;
+      line-height: 65px;
+    }
+  }
+
+  .general-page__container {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 95px;
+  }
+  .general-page__text_btn {
+    padding-bottom: 30px;
+      &_buttons-left {
+      width: 25%;
+    }
+    &_buttons-right {
+      width: 25%;
+    }
+  }
+}
 
 @include tablet {
+  .general-page__text {
+    &_main {
+      padding-left: 82px;
+      padding-right: 82px;
+      padding-bottom: 52px;
+    }
+    &_topic {
+      font-size: 42px;
+      line-height: 64px;
+    }
+  }
 
+  .general-page__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+
+  .general-page__text_btn {
+    padding-bottom: 10px;
+    &_buttons-left {
+      width: 32%;
+    }
+    &_buttons-right {
+      width: 32%;
+    }
+  }
 }
 
  @include phone {
