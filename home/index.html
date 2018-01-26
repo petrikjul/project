@@ -15,33 +15,42 @@
 	    <div class="container header-top__container">
 		    <div class="row">
 			     <nav class="col-md d-flex" id="navMenu">
-				     <ul class="header__nav_menu justify-content-between">
+				     <ul class="header__nav_menu gambyrger-menu justify-content-between">
 				     	<li class="header__nav_menu_menu-li header__logo"><a class="logotype" href="#"><img class="logo" src="img/logo.png"></a></li>
-					      <li class="header__nav_menu_menu-li"><a class="choice" href="#company">Company <img class="icon-pointer" src="img/icon-pointer.png"></a>
-					      	   <ul class="submenu">
-                                   <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
-                                   <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
-                                   <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
+					      <li class="header__nav_menu_menu-li  gambyrger-menu__list hidden-sm "><a class="choice" href="#company">Company <img class="icon-pointer" src="img/icon-pointer.png"></a>
+					      	   <ul class="submenu gambyrger-menu__list_on">
+                                   <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>Sudmenu 1</a></li>
+                                   <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>Sudmenu 1</a></li>
+                                   <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>Sudmenu 1</a></li>
                                </ul>
 					      </li>
-					      <li class="header__nav_menu_menu-li"><a class="choice" href="#how-it-works">How it works</a></li>
-					      <li class="header__nav_menu_menu-li"><a class="choice" href="#portfolio">Portfolio <img class="icon-pointer" src="img/icon-pointer.png"></a>
-					      	<ul class="submenu">
-                                <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
-                                <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
-                                <li class="submenu-li"><a class="submenu-a" href=#>Sudmenu 1</a></li>
+					      <li class="header__nav_menu_menu-li gambyrger-menu__list hidden-sm hidden-sm "><a class="choice" href="#how-it-works">How it works</a></li>
+					      <li class="header__nav_menu_menu-li gambyrger-menu__list hidden-sm hidden-sm "><a class="choice" href="#portfolio">Portfolio <img class="icon-pointer" src="img/icon-pointer.png"></a>
+					      	<ul class="submenu gambyrger-menu__list_on">
+                                <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>Sudmenu 1</a></li>
+                                <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>Sudmenu 1</a></li>
+                                <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>Sudmenu 1</a></li>
                             </ul>
 					      </li>
-					      <li class="header__nav_menu_menu-li"><a class="choice" href="#technologies">Technologies <img class="icon-pointer" src="img/icon-pointer.png"></a>
-					      	<ul class="submenu">
-                                <li class="submenu-li"><a class="submenu-a" href=#>.Net</a></li>
-                                <li class="submenu-li"><a class="submenu-a" href=#>PHP</a></li>
-                                <li class="submenu-li"><a class="submenu-a" href=#>IOS</a></li>
+					      <li class="header__nav_menu_menu-li gambyrger-menu__list hidden-sm hidden-sm "><a class="choice" href="#technologies">Technologies <img class="icon-pointer" src="img/icon-pointer.png"></a>
+					      	<ul class="submenu gambyrger-menu__list_on">
+                                <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>.Net</a></li>
+                                <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>PHP</a></li>
+                                <li class="submenu-li gambyrger-menu__list_on_small"><a class="submenu-a" href=#>IOS</a></li>
                             </ul>
 					      </li>
-					      <li class="header__nav_menu_menu-li"><a class="choice" href="#contact">Contact</a></li>
-					      <li class="header__nav_menu_menu-li hidden-sm hidden-md hidden-lg hidden-xl"><a class="choice" href="#"><img class="icon-menu" src="img/byrger.png"></a></li>
-					      <li class="header__nav_menu_menu-li header__btn"><a href="#" class="header__btn_buttons">Click here</a></li>
+					      <li class="header__nav_menu_menu-li gambyrger-menu__list hidden-sm hidden-sm"><a class="choice" href="#contact">Contact</a></li>
+					      <li class="header__nav_menu_menu-li">
+					        <div class="menu">
+                                <div class="menu__icon">
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                </div>
+                            </div>
+                        </li>   			
+					    <li class="header__nav_menu_menu-li header__btn"><a href="#" class="header__btn_buttons">Click here</a></li>
 				     </ul>
                  </nav>
 			</div>
@@ -53,7 +62,8 @@
 		<div class="container general-page__container">
 			<div class="row">
 				<div class="col-md general-page__buttons-vertical pull-right">
-					<a href="#" class="col-md-2 general-page__container_buttons-vertical">get help  <img class="icon-forma" src="img/icon-forma.png"></a>
+					<!-- vertical botton 
+					<a href="#" class="col-md-2 general-page__container_buttons-vertical">get help  <img class="icon-forma" src="img/icon-forma.png"></a> -->
 				</div>
 				<div class="col-md general-page__text d-flex flex-column justify-content-center text-center">
 			 		<h1 class="general-page__text_topic">We lead our customers to success</h1>
@@ -68,32 +78,43 @@
 				    </div>
 
 				    <div id="mice">
-                        <a href="#scroll">
+                        <a href="#scroll" id="scroll">
                       	    <div class="mouse">
                       	    	<div class="wheel"></div>
                       	    </div>
                             <div>
-                        	    <span class="unu"></span> <span class="doi"></span>
+                        	    <span class="unu"></span>
+                                <span class="doi"></span>
                             </div>
                         </a>
 					</div>
 
-				    
-
                 </div>
-
 			</div>
 		</div>
-
-
-
 	</div>
 
 <!-- section-2 ......................................... -->
 <div class="section-2" id="how-it-works">
-	<div class="container">
+	<div class="container page-one__container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md d-flex justify-content-between">
+                <div class="col-md-5  text-page">
+                    <p class="text-page__subtitle">who we are </p>
+                    <h2 class="text-page__topic">we can help you create the best product</h2>
+                    <p class="text-page__info-text">TRM is a company of ambitious technology professionals. Our main idea is really simple - to help smart people, entrepreneurs and companies with technology aspects of their projects.</p>
+                    <a href="#" class="text-page__more-info d-inline">More information<img src="img/icon-arrow.png" alt="" class="text-pag__more-info_arrow"></a>
+                </div>
+                <div class="col-md-7 team-right">
+                    <img src="img/section-2.1.png" alt="" class="team-right__foto-top">
+                    <img src="img/section-2.1.png" alt="" class="team-right__foto-bottom">
+                    <div class="team-right__summation">
+                        <div class="team-right__summation_team"></div>
+                        <div class="team-right__summation_projects"></div>
+                        <div class="team-right__summation_years"></div>
+                    </div>
+
+                </div>
 			</div>
 		</div>
 	</div>
@@ -141,8 +162,8 @@
 
 
 
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
