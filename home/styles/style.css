@@ -35,7 +35,7 @@ html, body {
   text-decoration: none;
 }
 
-.general-page__text_main, .text-page__subtitle, .text-page__info-text {
+.general-page__text_main, .text-page__subtitle, .text-page__info-text, ._team-text {
   font-family: 'GothamProRegular';
   font-size: 17px;
   color: #000;
@@ -60,7 +60,7 @@ span {
   margin: 0;
 }
 
-.text-page__topic {
+.text-page__topic, ._team-number {
   font-family: 'FjallaOneRegular';
   font-size: 41px;
   font-weight: 800;
@@ -519,7 +519,7 @@ span {
   }
 }
 .section-2 {
-  background-image: url("../img/fon-section-2.png");
+  background-image: url("../img/fon-section-2.2.png");
   background-size: cover;
 }
 
@@ -560,6 +560,47 @@ span {
 
 .text-pag__more-info_arrow {
   padding-left: 8px;
+}
+
+.team-office__foto-bottom {
+  padding-top: 245px;
+  position: relative;
+  right: 0;
+  top: -80px;
+}
+
+.team-office__foto-top {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  z-index: 1;
+}
+
+.team-office__summation {
+  position: absolute;
+  bottom: 60px;
+  left: 28px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-office__summation_team {
+  background-color: #FFFFFF;
+  margin-right: 10px;
+  padding: 30px 20px 20px 20px;
+}
+
+._team-number {
+  font-size: 55px;
+  font-family: 'GothamProRegular';
+  line-height: 55px;
+}
+
+._team-text {
+  font-size: 13px;
+  line-height: 15px;
 }
 
 /* -------- fonts -------- */
