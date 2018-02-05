@@ -6,42 +6,17 @@
   margin: 0 auto;
   padding-top: 102px;
 }
-.text-page__subtitle {
-  @extend %for-p;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: $grey-milk;
-  padding-top: 35px;
-  padding-bottom: 35px;
+.container__company-visiter {
+  display: flex;
 }
-.text-page__topic {
-  @extend %for-h2;
-  padding-bottom: 60px;
-}
-.text-page__info-text {
-  @extend %for-p;
-  font-size: 16px;
-  padding-bottom: 100px;
-}
-.text-page__more-info {
-  display: block;
-  @extend %for-a;
-  a:hover {
-    color: $blue;
-    text-decoration: none;
+.text-page {
+   @extend %for-text-page;
+  .text-page__info-text {
+    padding-right: 20px;
   }
-  font:{
-    family: 'FjallaOneRegular';
-    size: 16px;
-    weight: $medium;
-  }
-  text-transform: uppercase;
-  color: $activ-botton;
-}
-.text-pag__more-info_arrow {
-  padding-left: 8px;
+ }
 
-}.team-office__foto-bottom {
+.team-office__foto-bottom {
   padding-top: 245px;
   position: relative;
   right: 0;
@@ -64,9 +39,7 @@
   background-color: $white;
   margin-right: 10px;
   padding: 30px 20px 20px 20px;
-
 }
-
 ._team-number {
   @extend %for-h2;
   font: {
@@ -79,4 +52,24 @@
   @extend %for-p;
   font-size: 13px;
   line-height: 15px;
+}
+
+/* ------------ media query --------------- */
+@include desktop {
+
+}
+
+@include laptop {
+
+}
+
+@include tablet {
+
+}
+
+@include phone {
+
+}
+@include iphone {
+
 }

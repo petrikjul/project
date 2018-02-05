@@ -26,16 +26,16 @@ html, body {
   clear: both;
 }
 
-.header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .general-page__text_btn a, .general-page__container_buttons-vertical a, .text-page__more-info a {
+.text-page .text-page__more-info a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .general-page__text_btn a, .general-page__container_buttons-vertical a, .provide-one__text-suggesttion_read-more a, .list-tech__product_forma a, .visitka__work_link a {
   color: #000;
   text-decoration: none;
 }
-.header__nav_menu_menu-li a:hover, .submenu-li a:hover, .header__btn a:hover, .general-page__text_btn a:hover, .general-page__container_buttons-vertical a:hover, .text-page__more-info a:hover {
+.text-page .text-page__more-info:hover, .header__nav_menu_menu-li:hover, .submenu-li:hover, .header__btn:hover, .general-page__text_btn:hover, .general-page__container_buttons-vertical:hover, .provide-one__text-suggesttion_read-more:hover, .list-tech__product_forma:hover, .visitka__work_link:hover {
   color: #000;
   text-decoration: none;
 }
 
-.general-page__text_main, .text-page__subtitle, .text-page__info-text, ._team-text {
+.text-page .text-page__subtitle, .text-page .text-page__info-text, .general-page__text_main, ._team-text, .provide-one__text-suggesttion_second {
   font-family: 'GothamProRegular';
   font-size: 17px;
   color: #000;
@@ -60,31 +60,77 @@ span {
   margin: 0;
 }
 
-.text-page__topic, ._team-number {
+.text-page .text-page__topic, ._team-number {
   font-family: 'FjallaOneRegular';
   font-size: 41px;
-  font-weight: 800;
+  font-weight: 500;
+  text-transform: uppercase;
   line-height: 50px;
+  letter-spacing: 6px;
   margin-bottom: 0;
   margin-top: 0;
   color: #000;
 }
 
-.header__btn .header__btn_buttons, .general-page__text_btn_buttons-left, .general-page__text_btn_buttons-right, .general-page__container_buttons-vertical {
+.provide-one__text-suggesttion_names {
+  font-family: 'FjallaOneRegular';
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000;
+}
+
+.header__btn .header__btn_buttons, .general-page__text_btn_buttons-left, .general-page__text_btn_buttons-right, .list-tech__product_forma {
   font-family: 'FjallaOneRegular';
   font-size: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 12px 30px;
   background-color: #0070ed;
+  border-radius: 3px;
   margin-bottom: 0;
 }
 
-.header__nav_menu ul:after, .submenu ul:after {
+.header__nav_menu ul:after, .submenu ul:after, .visitka ul:after {
   display: block;
   content: ' ';
   clear: both;
   float: none;
+}
+
+.text-page .text-page__subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #c2cad6;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.text-page .text-page__topic {
+  padding-left: 0;
+  padding-bottom: 60px;
+}
+.text-page .text-page__info-text {
+  font-size: 16px;
+  padding-bottom: 62px;
+  clear: both;
+}
+.text-page .text-page__more-info {
+  display: block;
+  padding-top: 30px;
+  font-family: 'FjallaOneRegular';
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0070ed;
+}
+.text-page .text-page__more-info:hover {
+  color: #223569;
+  text-decoration: none;
+}
+.text-page .text-page__more-info_arrow {
+  padding-left: 8px;
 }
 
 .header-top__container {
@@ -318,13 +364,14 @@ span {
 
 .general-page__container {
   margin: 0 auto;
+}
+
+.general-page__text {
   padding-left: 110px;
   padding-right: 110px;
   padding-top: 205px;
   padding-bottom: 10px;
-  position: relative;
 }
-
 .general-page__text_main {
   padding-left: 70px;
   padding-right: 70px;
@@ -345,7 +392,7 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.general-page__text_btn a:hover {
+.general-page__text_btn:hover {
   color: #FFFFFF;
   background-color: #0070ed;
   text-decoration: none;
@@ -361,10 +408,16 @@ span {
 
 /* button vertical right*/
 .general-page__container_buttons-vertical {
-  position: absolute;
-  right: -65px;
+  position: fixed;
+  right: 0;
+  width: 13%;
+  margin-top: 374px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  border-radius: 3px;
+  font-family: 'FjallaOneRegular';
+  font-size: 16px;
+  text-transform: uppercase;
   color: #FFFFFF;
   background-color: #0070ed;
   display: -webkit-box;
@@ -528,38 +581,14 @@ span {
   padding-top: 102px;
 }
 
-.text-page__subtitle {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #c2cad6;
-  padding-top: 35px;
-  padding-bottom: 35px;
+.container__company-visiter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.text-page__topic {
-  padding-bottom: 60px;
-}
-
-.text-page__info-text {
-  font-size: 16px;
-  padding-bottom: 100px;
-}
-
-.text-page__more-info {
-  display: block;
-  font-family: 'FjallaOneRegular';
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #0070ed;
-}
-.text-page__more-info a:hover {
-  color: #223569;
-  text-decoration: none;
-}
-
-.text-pag__more-info_arrow {
-  padding-left: 8px;
+.text-page .text-page__info-text {
+  padding-right: 20px;
 }
 
 .team-office__foto-bottom {
@@ -601,6 +630,122 @@ span {
 ._team-text {
   font-size: 13px;
   line-height: 15px;
+}
+
+/* ------------ media query --------------- */
+.text-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.provide-one {
+  display: inline-block;
+}
+.provide-one__text-suggesttion {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.provide-one__text-suggesttion_fotos {
+  padding-bottom: 40px;
+}
+.provide-one__text-suggesttion_names {
+  padding-bottom: 25px;
+}
+.provide-one__text-suggesttion_second {
+  font-size: 15px;
+  color: #95a3b8;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.provide-one__text-suggesttion_read-more {
+  font-family: 'FjallaOneRegular';
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+.provide-one__text-suggesttion_read-more:hover {
+  color: #0070ed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slem {
+  padding-top: 16px;
+}
+
+.spec {
+  padding-bottom: 63px;
+}
+
+.section-4 {
+  padding-top: 155px;
+}
+
+.text-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-tech {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+.list-tech__product_forma {
+  font-family: 'GothamProMedium';
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  background: #FFFFFF;
+  padding: 25px 50px;
+  -webkit-box-shadow: 0px 15px 35px 0px rgba(163, 174, 186, 0.2);
+          box-shadow: 0px 15px 35px 0px rgba(163, 174, 186, 0.2);
+  color: #000;
+}
+.list-tech__product_forma:hover {
+  color: #FFFFFF;
+  background: #0070ed;
+  text-decoration: none;
+}
+
+.visitka {
+  display: block;
+  position: absolute;
+  width: 120px;
+  top: 70px;
+  padding-left: 0;
+  background-color: white;
+  text-align: center;
+}
+.visitka__work {
+  display: block;
+  width: 190px;
+  text-align: center;
+  background: none;
+  border: none;
+}
+.visitka__work_link {
+  display: block;
+  padding: 10px;
+  color: #dedddd;
+  text-decoration: none;
 }
 
 /* -------- fonts -------- */

@@ -5,14 +5,13 @@
 
 .general-page__container {
   margin: 0 auto;
-  padding-left: 110px;
-  padding-right: 110px;  
-  padding-top: 205px;
-  padding-bottom: 10px;
-  position: relative;
 }
 
 .general-page__text {
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 205px;
+  padding-bottom: 10px;
   &_main {
     @extend %for-p;
     padding-left: 70px;
@@ -32,7 +31,7 @@
   display: flex;
   justify-content: center;
   @extend %for-a;
-  a:hover {
+  &:hover {
     color: $white;
     background-color: $activ-botton;
     text-decoration: none;
@@ -51,11 +50,18 @@
 
 /* button vertical right*/
 .general-page__container_buttons-vertical {
-  position: absolute;
-  right: -65px;
+  position: fixed;
+  right: 0;
+  width: 13%;
+  margin-top: 374px;
   transform: rotate(-90deg);
+  border-radius: 3px;
   @extend %for-a;
-  @extend %for-buttons;
+  font:{
+    family: 'FjallaOneRegular';
+    size: 16px;
+  }
+  text-transform: uppercase;
   color: $white;
   background-color: $activ-botton;
   display: flex;

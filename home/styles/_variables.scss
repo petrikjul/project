@@ -20,7 +20,7 @@ html, body {
 		color: $black;
 	    text-decoration: none;
 	}
-  a:hover {
+  &:hover {
         color: $black;
         text-decoration: none;
   }
@@ -59,9 +59,11 @@ span {
 	font:{
       family: 'FjallaOneRegular';
 	    size: 41px;
-	    weight: $extrabold;
+	    weight: $medium;
     }
+    text-transform: uppercase;
     line-height: 50px;
+    letter-spacing: 6px;
     margin-bottom: 0;
     margin-top: 0;
     color: $black;
@@ -76,7 +78,7 @@ span {
     line-height: 25px;
     margin-bottom: 0;
     margin-top: 0;
-  color: $black;
+    color: $black;
 }
 
 %for-buttons {
@@ -88,6 +90,7 @@ span {
   color: $white;
   padding: 12px 30px;
   background-color: $activ-botton;
+  border-radius: 3px;
   margin-bottom: 0;
 }
 
@@ -97,7 +100,48 @@ span {
     content: ' ';
     clear: both;
     float: none;
+  }
 }
+
+%for-text-page {
+  .text-page__subtitle {
+    @extend %for-p;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $grey-milk;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .text-page__topic {
+    @extend %for-h2;
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+  .text-page__info-text {
+    @extend %for-p;
+    font-size: 16px;
+    padding-bottom: 62px;
+    clear: both;
+  }
+  .text-page__more-info {
+    display: block;
+    @extend %for-a;
+    padding-top: 30px;
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+    font:{
+      family: 'FjallaOneRegular';
+      size: 16px;
+      weight: $medium;
+    }
+    text-transform: uppercase;
+    color: $activ-botton;
+  }
+  .text-page__more-info_arrow {
+    padding-left: 8px;
+  }
 }
 
 

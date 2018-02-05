@@ -1,0 +1,48 @@
+.text-page {
+  display: flex;
+  flex-direction: column;
+  @extend %for-text-page;
+}
+
+.provide-one {
+  display: inline-block;
+  &__text-suggesttion {
+     padding-top: 30px;
+     padding-bottom: 100px;
+     &_fotos {
+        padding-bottom: 40px;
+     }
+     &_names {
+        @extend %for-h3;
+        padding-bottom: 25px;
+     }
+     &_second {
+        @extend %for-p;
+        font-size: 15px;
+        color: $blue-light;
+        padding-right: 30px;
+        padding-bottom: 30px;
+     }
+     &_read-more {
+        font:{
+           family: 'FjallaOneRegular';
+           size: 13px;
+           weight: $bold;
+        }
+        color: $black;
+        text-transform: uppercase;
+        @extend %for-a;
+        &:hover {
+           color: $activ-botton;
+           text-decoration: none;
+          cursor: pointer;
+        }
+     }
+  }
+}
+.slem {
+  padding-top: 16px;
+}
+.spec {
+  padding-bottom: 63px;
+}
