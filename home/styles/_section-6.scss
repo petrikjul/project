@@ -1,0 +1,29 @@
+.section-6 {
+  padding-top: 145px;
+  padding-bottom: 150px;
+}
+.text-page {
+  display: flex;
+  flex-direction: column;
+  @extend %for-text-page;
+  .text-page__info-text {
+    padding-right: 44px;
+    padding-left: 0;
+  }
+
+}
+.foto-team {
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 70px;
+  &__links {
+  @extend %for-a;
+    &:hover {
+
+    }
+
+  &_we {
+    padding-right: 20px;
+  }
+  }
+}

@@ -26,16 +26,16 @@ html, body {
   clear: both;
 }
 
-.text-page .text-page__more-info a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .general-page__text_btn a, .general-page__container_buttons-vertical a, .provide-one__text-suggesttion_read-more a, .list-tech__product_forma a, .visitka__work_link a {
+.text-page .text-page__more-info a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .general-page__text_btn a, .general-page__container_buttons-vertical a, .provide-one__text-suggesttion_read-more a, .list-tech__product_forma a, .visitka__work_link a, .foto-team__links a {
   color: #000;
   text-decoration: none;
 }
-.text-page .text-page__more-info:hover, .header__nav_menu_menu-li:hover, .submenu-li:hover, .header__btn:hover, .general-page__text_btn:hover, .general-page__container_buttons-vertical:hover, .provide-one__text-suggesttion_read-more:hover, .list-tech__product_forma:hover, .visitka__work_link:hover {
+.text-page .text-page__more-info:hover, .header__nav_menu_menu-li:hover, .submenu-li:hover, .header__btn:hover, .general-page__text_btn:hover, .general-page__container_buttons-vertical:hover, .provide-one__text-suggesttion_read-more:hover, .list-tech__product_forma:hover, .visitka__work_link:hover, .foto-team__links:hover {
   color: #000;
   text-decoration: none;
 }
 
-.text-page .text-page__subtitle, .text-page .text-page__info-text, .general-page__text_main, ._team-text, .provide-one__text-suggesttion_second {
+.text-page .text-page__subtitle, .text-page .text-page__info-text, .general-page__text_main, ._team-text, .provide-one__text-suggesttion_second, .manager__text-solutions, .manager__name-marcos, .manager__profaition {
   font-family: 'GothamProRegular';
   font-size: 17px;
   color: #000;
@@ -685,6 +685,7 @@ span {
 
 .section-4 {
   padding-top: 155px;
+  padding-bottom: 300px;
 }
 
 .text-page {
@@ -748,6 +749,151 @@ span {
   text-decoration: none;
 }
 
+.section-5 {
+  background-image: url("../img/fon-section-5.png");
+  background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 80px;
+}
+
+.manager {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-radius: 5px;
+}
+.manager__fotos-door {
+  padding-bottom: 63px;
+}
+.manager__fotos-door_man {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.manager__text-solutions {
+  font-size: 26px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 63px;
+}
+.manager__name-marcos {
+  font-family: 'GothamProMedium';
+  font-size: 15px;
+  font-weight: 500;
+}
+.manager__profaition {
+  font-family: 'GothamProMedium';
+  font-size: 16px;
+  font-weight: 500;
+  color: #c7d7ea;
+}
+
+.carousels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 82px;
+  padding-bottom: 87px;
+}
+.carousels__as {
+  cursor: pointer;
+  height: 16px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: #0049d7;
+}
+.carousels__as_he {
+  cursor: pointer;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 16px;
+  border-radius: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: #FFFFFF;
+}
+
+.section-6 {
+  padding-top: 145px;
+  padding-bottom: 150px;
+}
+
+.text-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.text-page .text-page__info-text {
+  padding-right: 44px;
+  padding-left: 0;
+}
+
+.foto-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 70px;
+}
+.foto-team__links_we {
+  padding-right: 20px;
+}
+
+.section-7 {
+  background-image: url("../img/fon-section-7.png");
+  background-size: cover;
+  padding-top: 97px;
+  padding-bottom: 107px;
+}
+
+.text-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.text-page .text-page__info-text {
+  padding-right: 44px;
+  padding-left: 0;
+}
+
+.form-group-input {
+  border: none;
+}
+
+.form-control {
+  text-transform: uppercase;
+  padding: 0;
+  border-width: 0px;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);
+  background-color: #fff0;
+  border: 1px solid #eceef000;
+  border-bottom: 1px solid #bac3cd;
+  border-radius: 0;
+}
+
 /* -------- fonts -------- */
 /* -------- colors -------- */
 /* -------- variables -------- */
@@ -758,6 +904,7 @@ span {
 /* -------- section-4 -------- */
 /* -------- section-5 -------- */
 /* -------- section-6 -------- */
+/* -------- section-7 -------- */
 /* -------- footer -------- */
 
 /*# sourceMappingURL=style.css.map */

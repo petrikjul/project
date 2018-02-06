@@ -18,11 +18,11 @@ html, body {
 %for-a {
 	a {		
 		color: $black;
-	    text-decoration: none;
+    text-decoration: none;
 	}
   &:hover {
-        color: $black;
-        text-decoration: none;
+    color: $black;
+    text-decoration: none;
   }
 }
 
