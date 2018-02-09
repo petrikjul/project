@@ -1,0 +1,75 @@
+.section-2 {
+  background-image: url("../img/fon-section-2.2.png");
+  background-size: cover;
+}
+.page-one__container {
+  margin: 0 auto;
+  padding-top: 102px;
+}
+.container__company-visiter {
+  display: flex;
+}
+.text-page {
+   @extend %for-text-page;
+  .text-page__info-text {
+    padding-right: 20px;
+  }
+ }
+
+.team-office__foto-bottom {
+  padding-top: 245px;
+  position: relative;
+  right: 0;
+  top: -80px;
+ }
+ .team-office__foto-top {
+   position: absolute;
+   top: -30px;
+   left: -20px;
+   z-index: 1;
+ }
+.team-office__summation {
+  position: absolute;
+  bottom: 60px;
+  left: 28px;
+  z-index: 2;
+  display: flex;
+}
+.team-office__summation_team {
+  background-color: $white;
+  margin-right: 10px;
+  padding: 30px 20px 20px 20px;
+}
+._team-number {
+  @extend %for-h2;
+  font: {
+    size: 55px;
+    family: 'GothamProRegular';
+  }
+  line-height: 55px;
+}
+._team-text {
+  @extend %for-p;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* ------------ media query --------------- */
+@include desktop {
+
+}
+
+@include laptop {
+
+}
+
+@include tablet {
+
+}
+
+@include phone {
+
+}
+@include iphone {
+
+}
