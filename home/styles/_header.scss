@@ -1,0 +1,238 @@
+.header-top__container {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+.header {
+    background-color: $white;
+}
+
+.header__nav_menu {
+  @extend %for-ul;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: {
+    family: 'GothamProMedium';
+    size: 15px;
+  }
+  color: $black;
+  line-height: 15px;
+}
+
+.header__nav_menu_menu-li { 
+  position: relative;
+  @extend %for-a;
+  a:hover {
+    color: $black;
+  }
+}    
+
+.header__nav_menu_menu-li:hover {
+  .submenu {
+    display: block;
+  }
+}
+
+.submenu {
+  @extend %for-ul;
+  display: none;
+  position: absolute;
+  width: 120px;
+  top: 15px;
+  padding-left: 0;
+  background-color: white;
+  text-align: center;
+}
+
+.submenu-li {
+  display: block;
+  @extend %for-a;
+  a:hover {
+    color: $black;
+  }
+  border-bottom: 1px solid $grey-light;
+}
+
+.submenu-a {      
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: $white;
+  text-decoration: none;
+}
+
+.header__btn {
+  @extend %for-a;
+  display: flex;
+  .header__btn_buttons {
+    @extend %for-buttons;
+    color: $black;
+  }
+}
+
+.choice {    
+  display: block;
+}
+
+ /* ...byrger start ....................................... */ 
+.menu {
+    text-align: right;
+}
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: $blue;
+  border-radius: 6px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.gambyrger-menu__list {
+    display: inline-block;
+    color: $activ-botton;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.gambyrger-menu__list:hover {
+    text-decoration: none;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .gambyrger-menu {
+  display: block;  
+}
+
+
+  
+
+/* ... byrger final ....................................... */  
+
+@include tablet {
+  .gambyrger-menu__list {    
+    display: none;
+  }
+
+  .menu__icon {
+    display: inline-block;
+  }
+
+  .gambyrger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 14px;    
+    z-index: 1000;    
+  }
+  
+  .choice {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: $black;
+  }
+}
+
+@include phone {
+  .gambyrger-menu__list {    
+    display: none;
+  }
+
+  .menu__icon {
+    display: inline-block;
+  }
+
+  .gambyrger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 14px;    
+    z-index: 1000;    
+  }
+  
+  .choice {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: $black;
+  }
+}
+
+@include iphone {
+  .gambyrger-menu__list {    
+    display: none;
+  }
+  
+  .menu__icon {
+    display: inline-block;
+  }
+
+  .gambyrger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 14px;    
+    z-index: 1000;    
+  }
+  
+  .gambyrger-menu__list {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: $black;
+  }
+}
+

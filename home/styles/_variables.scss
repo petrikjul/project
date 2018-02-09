@@ -1,19 +1,39 @@
-$white: #FFFFFF;
-$orange: #eeb501;
-$black: #000;
-$brown: #1e0404;
-$grey: #4f4f4f;
-$extrabold: 800;
-$bold: 700;
-$regylar: 400;
-$italic: 600 italic;
+
 
 html, body {
-	font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Fjalla One', sans-serif;
 }
 
-.container {
-  margin: 0 auto;
+%for-buttons-vertical {
+  position: fixed;
+  right: 0;
+  width: 13%;
+  top: 55%;
+  z-index: 5;
+  margin: 0px -55px 0 0;  
+  border-radius: 3px;
+  @extend %for-a;
+  font:{
+    family: 'FjallaOneRegular';
+    size: 16px;
+  }
+
+  text-transform: uppercase;
+  color: $black;
+  background-color: $activ-botton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: $white;
+    background-color: $activ-botton-opacity;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }  
 }
 
 .clearfix::after {
@@ -24,23 +44,28 @@ html, body {
 
 %for-a {
 	a {		
-		color: $white;
-	    text-decoration: none;
+		color: $black;
+    text-decoration: none;
 	}
-    a:hover {
-        color: $orange;
-        text-decoration: none;
-    }
+  a:visited {
+    color: $blue-dark;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+  
 }
 
 %for-p {
 	font:{
-		size: 20px;
-	    weight: $regylar;
-    }
-	color: $white;
+        family: 'GothamProRegular';
+		    size: 17px;
+  }
+	color: $black;
 	margin-bottom: 0;
-	line-height: 35px;
+	line-height: 26px;
 }
 
 span {
@@ -50,56 +75,110 @@ span {
 }
 
 %for-h1 {
-	font:{	   
-	   size: 124px;	
+	font:{
+     family: 'FjallaOneRegular';
+	   size: 80px;
 	   weight: $extrabold;
     }
-    line-height: 115px;
-    color: $orange;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    line-height: 90px;
+    color: $black;
     margin: 0;
 }
 
 %for-h2 {
 	font:{
-	    size: 68px;	
-	    weight: $extrabold;
+      family: 'FjallaOneRegular';
+	    size: 41px;
+	    weight: $medium;
     }
-    line-height: 87px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 6px;
     margin-bottom: 0;
     margin-top: 0;
-    color: $white;
+    color: $black;
 }
 
 %for-h3 {
 	font:{
+     family: 'FjallaOneRegular';
 	   size: 25px;	
 	   weight: $bold;
     }
     line-height: 25px;
     margin-bottom: 0;
     margin-top: 0;
-    color: $brown;
+    color: $black;
 }
 
 %for-buttons {
-	font:{	   
-	    size: 21px;	
-	    weight: $bold;
+	font:{
+      family: 'FjallaOneRegular';
+	    size: 16px;
 	}
-	text-transform: uppercase;
-	padding: 10px 45px;
-    border: 2px solid $white;
-	display: inline-block;
-	margin-bottom: 0;	
+  text-transform: uppercase;
+  color: $black;
+  padding: 12px 30px;
+  background-color: $activ-botton;
+  border-radius: 3px;
+  margin-bottom: 0;
 }
 
-@mixin desktop {
-  @media (min-width: 1370px) {
-    @content;
+%for-ul {
+  ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
   }
 }
-@mixin laptop-plus {
-  @media (min-width: 1200px) and (max-width: 1369px) {
+
+%for-text-page {
+  .text-page__subtitle {
+    @extend %for-p;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $grey-milk;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .text-page__topic {
+    @extend %for-h2;
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+  .text-page__info-text {
+    @extend %for-p;
+    font-size: 16px;
+    padding-bottom: 62px;
+    clear: both;
+  }
+  .text-page__more-info {
+    display: block;
+    @extend %for-a;
+    padding-top: 30px;
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+    font:{
+      family: 'FjallaOneRegular';
+      size: 16px;
+      weight: $medium;
+    }
+    text-transform: uppercase;
+    color: $activ-botton;
+  }
+  .text-page__more-info_arrow {
+    padding-left: 8px;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: 1200px) {
     @content;
   }
 }
@@ -114,12 +193,12 @@ span {
   }
 }  
 @mixin phone {
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 576px) and (max-width: 767px) {
     @content;
   }
 } 
 @mixin iphone {
-  @media (max-width: 319px) {
+  @media (min-width: 320px) and (max-width: 575px) {
     @content;
   }
 }

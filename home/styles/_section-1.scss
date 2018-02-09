@@ -1,0 +1,240 @@
+.section-1 {
+   background-image: url("../img/fon-section-1.png");
+   background-size: cover;
+}
+
+.general-page__buttons-vertical {
+  @extend %for-buttons-vertical;
+  transform: rotate(-90deg);
+  &_icon-forma {
+    transform: rotate(90deg);
+    margin-left: 20px;
+  }
+}
+
+.general-page__container {
+  margin: 0 auto;
+}
+
+.general-page__text {
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 205px;
+  padding-bottom: 10px;
+  &_main {
+    @extend %for-p;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 65px;
+    font-weight: $medium-plus;
+  }
+  &_topic {
+    @extend %for-h1;
+    font-weight: $light;
+    padding-bottom: 20px;
+  }
+}
+
+.general-page__text_btns {
+  padding-bottom: 57px;
+  display: flex;
+  justify-content: center;
+  
+  &_vip {
+    @extend %for-buttons;
+    background-color: $white;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 12px 53px;
+    @extend %for-a;
+    &:hover {
+    color: $white;
+    background-color: $activ-botton;
+    text-decoration: none;
+    }
+  }
+  .leftb {
+       padding: 12px 36px;
+    }
+  
+}
+
+/* button vertical right*/
+
+/* .general-page__container_buttons-vertical {
+  position: fixed;
+  right: 0;
+  width: 13%;
+  top: 50%;
+  z-index: 5;
+  transform: rotate(-90deg);
+  border-radius: 3px;
+  @extend %for-a;
+  font:{
+    family: 'FjallaOneRegular';
+    size: 16px;
+  }
+  text-transform: uppercase;
+  color: $white;
+  background-color: $activ-botton;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &:hover {
+    color: $white;
+    background-color: $activ-botton-opacity;
+    text-decoration: none;
+  }
+  .icon-forma {
+    transform: rotate(90deg);
+  }
+} */
+ 
+/* scroll mouse */ 
+#mice {
+  margin: 0 auto;
+  padding-bottom: 8em;
+   padding-top: 5.5em;
+   text-align: center;
+   width: 20px;
+    height: 9px; 
+  }
+
+#mice span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid $black;
+  border-bottom: 2px solid $black;
+  margin: 5px 0 3px 6px;
+}
+
+
+.unu
+{
+  margin-top: 6px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouse {
+    height: 30px;
+    width: 22px;
+    border-radius: 10px;
+    transform: none;
+    border: 2px solid $black;
+    top: 170px;
+}
+.wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 7px auto;
+    background: $black;
+    position: relative;
+}
+
+/* ------------ media query --------------- */
+@include desktop {
+  .general-page__text_btn {
+    &_buttons-left {
+      width: 19%;
+    }
+    &_buttons-right {
+      width: 19%;
+    }
+  }
+}
+
+@include laptop {
+  .general-page__text {
+    &_main {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 65px;
+      }
+    &_topic {
+      font-size: 50px;
+      line-height: 65px;
+    }
+  }
+
+  .general-page__container {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 95px;
+  }
+  .general-page__text_btn {
+    padding-bottom: 30px;
+      &_buttons-left {
+      width: 25%;
+    }
+    &_buttons-right {
+      width: 25%;
+    }
+  }
+}
+
+@include tablet {
+  .general-page__text {
+    &_main {
+      padding-left: 82px;
+      padding-right: 82px;
+      padding-bottom: 52px;
+    }
+    &_topic {
+      font-size: 42px;
+      line-height: 64px;
+    }
+  }
+
+  .general-page__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+
+  .general-page__text_btn {
+    padding-bottom: 10px;
+    &_buttons-left {
+      width: 32%;
+    }
+    &_buttons-right {
+      width: 32%;
+    }
+  }
+}
+
+ @include phone {
+
+}
+ @include iphone {
+ }

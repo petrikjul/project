@@ -1,0 +1,125 @@
+.section-4 {
+  padding-top: 155px;
+  padding-bottom: 300px;
+}
+.text-page {
+  display: flex;
+  flex-direction: column;
+  @extend %for-text-page;
+}
+.list-tech {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  &__product {
+     &_forma {
+       @extend %for-buttons;
+       font:{
+         family: 'GothamProMedium';
+         size: 15px;
+         weight: $medium;
+       }
+       text-transform: none;
+       background: $white;
+       padding: 25px 50px;
+       box-shadow: 0px 15px 35px 0px rgba(163, 174, 186, 0.2);
+       @extend %for-a;
+       color: $black;
+       &:hover {
+          color: $white;
+          background: $activ-botton;
+          text-decoration: none;  
+       }
+     }
+  }
+}
+
+
+.visitka {
+  @extend %for-ul; 
+  position: absolute;
+  top: 70px;
+  padding-left: 0;
+  text-align: center;
+  a:hover {
+        color: $black;
+        text-decoration: none;
+      }
+  &__work {
+    display: block;
+    width: 190px;
+    text-align: center;
+    background: none;
+    border: none;
+    &_link {
+      display: block;
+      padding: 10px;
+      @extend %for-a;
+      color: $grey-light;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.web:hover {
+  .activ-forma-web {
+    @extend %for-a;
+    color: $black;
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.mobile:hover {
+  .activ-forma-mobile {
+     @extend %for-a;
+    color: $black;
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.cloud:hover {
+  .activ-forma-cloud {
+     @extend %for-a;
+    color: $black;
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.digital:hover {
+  .activ-forma-digital {
+     @extend %for-a;
+    color: $black;
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.desktop:hover {
+  .activ-forma-desktop {
+     @extend %for-a;
+    color: $black;
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.testing:hover {
+  .activ-forma-testing {
+     @extend %for-a;
+    color: $black;
+    a:hover {
+      color: $blue-dark;
+    }
+  }
+}
