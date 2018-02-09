@@ -997,6 +997,7 @@ span {
 .sixth__icon-link {
   padding-right: 5px;
   padding-left: 5px;
+  color: #FFFFFF;
 }
 .sixth__icon-row {
   display: -webkit-box;
@@ -1023,6 +1024,7 @@ span {
 .sixth__text-link {
   font-family: 'GothamProMedium';
   font-size: 14px;
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -1058,13 +1060,13 @@ span {
 .sixth__copy-text {
   font-family: 'FjallaOneRegular';
   font-size: 14px;
-  color: #303a49;
+  color: #374152;
 }
 .sixth__copy-line {
   margin: 0 auto;
   width: 60px;
   height: 2px;
-  background-color: #303a49;
+  background-color: #374152;
 }
 
 .fab {
@@ -1077,7 +1079,7 @@ span {
   width: 46px;
   height: 46px;
   border-radius: 23px;
-  background-color: #202836;
+  background-color: #374152;
 }
 
 /* -------- fonts -------- */
