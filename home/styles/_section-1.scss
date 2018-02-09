@@ -3,6 +3,15 @@
    background-size: cover;
 }
 
+.general-page__buttons-vertical {
+  @extend %for-buttons-vertical;
+  transform: rotate(-90deg);
+  &_icon-forma {
+    transform: rotate(90deg);
+    margin-left: 20px;
+  }
+}
+
 .general-page__container {
   margin: 0 auto;
 }
@@ -26,34 +35,38 @@
   }
 }
 
-.general-page__text_btn {
+.general-page__text_btns {
   padding-bottom: 57px;
   display: flex;
   justify-content: center;
-  @extend %for-a;
-  &:hover {
+  
+  &_vip {
+    @extend %for-buttons;
+    background-color: $white;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 12px 53px;
+    @extend %for-a;
+    &:hover {
     color: $white;
     background-color: $activ-botton;
     text-decoration: none;
+    }
   }
-  &_buttons-left {
-    @extend %for-buttons;
-    background-color: $white;
-    margin-left: 15px;
-  }
-  &_buttons-right {
-    @extend %for-buttons;
-    background-color: $white;
-    margin-right: 15px;
-  }
+  .leftb {
+       padding: 12px 36px;
+    }
+  
 }
 
 /* button vertical right*/
-.general-page__container_buttons-vertical {
+
+/* .general-page__container_buttons-vertical {
   position: fixed;
   right: 0;
   width: 13%;
-  margin-top: 374px;
+  top: 50%;
+  z-index: 5;
   transform: rotate(-90deg);
   border-radius: 3px;
   @extend %for-a;
@@ -75,7 +88,7 @@
   .icon-forma {
     transform: rotate(90deg);
   }
-}
+} */
  
 /* scroll mouse */ 
 #mice {
