@@ -20,16 +20,11 @@ html, body {
   font-family: 'Fjalla One', sans-serif;
 }
 
-.general-page__buttons-vertical {
-  position: fixed;
-  right: 0;
-  width: 13%;
-  top: 55%;
-  z-index: 5;
-  margin: 0px -55px 0 0;
-  border-radius: 3px;
+.rooted .general-page__buttons-vertical {
   font-family: 'FjallaOneRegular';
   font-size: 16px;
+  padding: 3px 25px;
+  border-radius: 3px;
   text-transform: uppercase;
   color: #000;
   background-color: #0070ed;
@@ -42,14 +37,12 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 3px 25px;
+  border-radius: 2px;
 }
-.general-page__buttons-vertical:hover {
+.rooted .general-page__buttons-vertical:hover {
   color: #FFFFFF;
   background-color: rgba(0, 112, 237, 0.6);
-  text-decoration: none;
-}
-.general-page__buttons-vertical:visited {
-  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -59,15 +52,15 @@ html, body {
   clear: both;
 }
 
-.general-page__buttons-vertical a, .text-page .text-page__more-info a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .general-page__text_btns_vip a, .provide-one__text-suggesttion_read-more a, .list-tech__product_forma a, .visitka__work_link a, .web:hover .activ-forma-web a, .mobile:hover .activ-forma-mobile a, .cloud:hover .activ-forma-cloud a, .digital:hover .activ-forma-digital a, .desktop:hover .activ-forma-desktop a, .testing:hover .activ-forma-testing a, .foto-team__links a {
+.rooted .general-page__buttons-vertical a, .text-page .text-page__more-info a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .general-page__text_btns_vip a, .provide-one__text-suggesttion_read-more a, .list-tech__product:hover .visitka a, .list-tech__product_forma a, .visitka__work_link a, .foto-team__links_we a, .information_lok a, .information__webs_communications_icon-link a {
   color: #000;
   text-decoration: none;
 }
-.general-page__buttons-vertical a:visited, .text-page .text-page__more-info a:visited, .header__nav_menu_menu-li a:visited, .submenu-li a:visited, .header__btn a:visited, .general-page__text_btns_vip a:visited, .provide-one__text-suggesttion_read-more a:visited, .list-tech__product_forma a:visited, .visitka__work_link a:visited, .web:hover .activ-forma-web a:visited, .mobile:hover .activ-forma-mobile a:visited, .cloud:hover .activ-forma-cloud a:visited, .digital:hover .activ-forma-digital a:visited, .desktop:hover .activ-forma-desktop a:visited, .testing:hover .activ-forma-testing a:visited, .foto-team__links a:visited {
+.rooted .general-page__buttons-vertical a:visited, .text-page .text-page__more-info a:visited, .header__nav_menu_menu-li a:visited, .submenu-li a:visited, .header__btn a:visited, .general-page__text_btns_vip a:visited, .provide-one__text-suggesttion_read-more a:visited, .list-tech__product:hover .visitka a:visited, .list-tech__product_forma a:visited, .visitka__work_link a:visited, .foto-team__links_we a:visited, .information_lok a:visited, .information__webs_communications_icon-link a:visited {
   color: #0049d7;
   text-decoration: none;
 }
-.general-page__buttons-vertical a:hover, .text-page .text-page__more-info a:hover, .header__nav_menu_menu-li a:hover, .submenu-li a:hover, .header__btn a:hover, .general-page__text_btns_vip a:hover, .provide-one__text-suggesttion_read-more a:hover, .list-tech__product_forma a:hover, .visitka__work_link a:hover, .web:hover .activ-forma-web a:hover, .mobile:hover .activ-forma-mobile a:hover, .cloud:hover .activ-forma-cloud a:hover, .digital:hover .activ-forma-digital a:hover, .desktop:hover .activ-forma-desktop a:hover, .testing:hover .activ-forma-testing a:hover, .foto-team__links a:hover {
+.rooted .general-page__buttons-vertical a:hover, .text-page .text-page__more-info a:hover, .header__nav_menu_menu-li a:hover, .submenu-li a:hover, .header__btn a:hover, .general-page__text_btns_vip a:hover, .provide-one__text-suggesttion_read-more a:hover, .list-tech__product:hover .visitka a:hover, .list-tech__product_forma a:hover, .visitka__work_link a:hover, .foto-team__links_we a:hover, .information_lok a:hover, .information__webs_communications_icon-link a:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -408,11 +401,21 @@ span {
   background-size: cover;
 }
 
-.general-page__buttons-vertical {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.rooted {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  position: fixed;
+  right: 0;
+  z-index: 5;
+  top: 65%;
 }
-.general-page__buttons-vertical_icon-forma {
+.rooted .general-page__buttons-vertical {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.rooted .general-page__buttons-vertical_icon-forma {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-left: 20px;
@@ -672,6 +675,8 @@ span {
   background-color: #FFFFFF;
   margin-right: 10px;
   padding: 30px 20px 20px 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 ._team-number {
@@ -762,6 +767,13 @@ span {
           justify-content: space-between;
   padding-bottom: 30px;
 }
+.list-tech__product:hover .visitka {
+  display: block;
+  color: #000;
+}
+.list-tech__product:hover .visitka a:hover {
+  color: #0049d7;
+}
 .list-tech__product_forma {
   font-family: 'GothamProMedium';
   font-size: 15px;
@@ -780,12 +792,17 @@ span {
 }
 
 .visitka {
+  display: none;
   position: absolute;
-  top: 70px;
+  top: 40px;
   padding-left: 0;
   text-align: center;
+  font-family: 'GothamProMedium';
+  font-size: 15px;
+  font-weight: 500;
 }
 .visitka a:hover {
+  display: block;
   color: #000;
   text-decoration: none;
 }
@@ -801,48 +818,6 @@ span {
   padding: 10px;
   color: #dedddd;
   text-decoration: none;
-}
-
-.web:hover .activ-forma-web {
-  color: #000;
-}
-.web:hover .activ-forma-web a:hover {
-  color: #0049d7;
-}
-
-.mobile:hover .activ-forma-mobile {
-  color: #000;
-}
-.mobile:hover .activ-forma-mobile a:hover {
-  color: #0049d7;
-}
-
-.cloud:hover .activ-forma-cloud {
-  color: #000;
-}
-.cloud:hover .activ-forma-cloud a:hover {
-  color: #0049d7;
-}
-
-.digital:hover .activ-forma-digital {
-  color: #000;
-}
-.digital:hover .activ-forma-digital a:hover {
-  color: #0049d7;
-}
-
-.desktop:hover .activ-forma-desktop {
-  color: #000;
-}
-.desktop:hover .activ-forma-desktop a:hover {
-  color: #0049d7;
-}
-
-.testing:hover .activ-forma-testing {
-  color: #000;
-}
-.testing:hover .activ-forma-testing a:hover {
-  color: #0049d7;
 }
 
 .section-5 {
@@ -949,8 +924,49 @@ span {
   padding-top: 18px;
   padding-bottom: 70px;
 }
+.foto-team__links {
+  list-style: none;
+}
 .foto-team__links_we {
   padding-right: 20px;
+}
+
+.information {
+  list-style: none;
+}
+.information_lok {
+  color: #223569;
+}
+.information_lok a:hover {
+  color: #223569;
+}
+
+.information__webs_communications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style: none;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 0;
+}
+.information__webs_communications_icon-link {
+  width: 24px;
+  display: block;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  padding-top: 2px;
+  margin-right: 5px;
+}
+.information__webs_communications_icon-link a:hover {
+  color: #223569;
 }
 
 .section-7 {

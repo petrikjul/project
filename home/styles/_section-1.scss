@@ -2,14 +2,21 @@
    background-image: url("../img/fon-section-1.png");
    background-size: cover;
 }
-
-.general-page__buttons-vertical {
+.rooted {
+  transform: rotate(90deg);
+  transform-origin: right top;
+  position: fixed;
+  right: 0;
+  z-index: 5;
+  top: 65%;
+  .general-page__buttons-vertical {
   @extend %for-buttons-vertical;
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
   &_icon-forma {
     transform: rotate(90deg);
     margin-left: 20px;
   }
+}
 }
 
 .general-page__container {

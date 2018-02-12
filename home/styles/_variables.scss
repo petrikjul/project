@@ -5,20 +5,14 @@ html, body {
     font-family: 'Fjalla One', sans-serif;
 }
 
-%for-buttons-vertical {
-  position: fixed;
-  right: 0;
-  width: 13%;
-  top: 55%;
-  z-index: 5;
-  margin: 0px -55px 0 0;  
-  border-radius: 3px;
+%for-buttons-vertical {  
   @extend %for-a;
   font:{
     family: 'FjallaOneRegular';
     size: 16px;
   }
-
+  padding: 3px 25px;
+  border-radius: 3px;
   text-transform: uppercase;
   color: $black;
   background-color: $activ-botton;
@@ -30,10 +24,8 @@ html, body {
     background-color: $activ-botton-opacity;
     text-decoration: none;
   }
-  &:visited {
-    color: $white;
-    text-decoration: none;
-  }  
+  padding: 3px 25px;
+  border-radius: 2px; 
 }
 
 .clearfix::after {
@@ -54,8 +46,7 @@ html, body {
   a:hover {
     color: $white;
     text-decoration: none;
-  }
-  
+  }  
 }
 
 %for-p {

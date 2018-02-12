@@ -10,20 +10,58 @@
     padding-right: 44px;
     padding-left: 0;
   }
-
 }
+
 .foto-team {
   display: flex;
   padding-top: 18px;
   padding-bottom: 70px;
   &__links {
-  @extend %for-a;
-    &:hover {
-
+    list-style: none;
+    &_we {
+      padding-right: 20px;
+      @extend %for-a;
     }
+  }
+}
 
-  &_we {
-    padding-right: 20px;
+.information {
+  list-style: none;
+  &_lok {
+    @extend %for-a;
+    color: $blue;
+    a:hover {
+      color: $blue;
+    }
   }
+}
+
+.information__webs {
+  &_communications {
+    display: flex;
+    justify-content: start;      
+    list-style: none;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    &_icon-link {        
+        width: 24px;
+        display: block;
+        height: 24px;
+        border-radius: 12px;
+        background-color: $white;
+        border: 1px solid $black;
+        color: $black;
+        text-align: center;
+        padding-top: 2px;
+        margin-right: 5px;
+        @extend %for-a;
+        a:hover {
+          color: $blue;
+        }
+      }
   }
+}
+.circles{
+  
 }
