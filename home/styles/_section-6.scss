@@ -15,7 +15,7 @@
 .foto-team {
   display: flex;
   padding-top: 18px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   &__links {
     list-style: none;
     &_we {
@@ -26,25 +26,42 @@
 }
 
 .information {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 35px;
   list-style: none;
-  &_lok {
+  padding-left: 12px;
+  margin-bottom: 0;
+  font: {
+      family: 'GothamProMedium';
+      size: 15px;
+      weight: $medium;
+    }
+  &__names {
+    font: {      
+      size: 19px;     
+    }
+    padding-bottom: 5px;
+  }
+  &__jobs {
+    color: $grey-clear;
+    padding-bottom: 20px;
+  }
+  &__e-mail_lok {
     @extend %for-a;
-    color: $blue;
+    text-decoration: underline;
     a:hover {
       color: $blue;
     }
   }
-}
-
-.information__webs {
-  &_communications {
-    display: flex;
-    justify-content: start;      
-    list-style: none;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    padding-left: 0;
-    &_icon-link {        
+  &__webs {
+    &_communications {
+      display: flex;
+      justify-content: start;      
+      list-style: none;
+      padding-top: 30px;
+      padding-left: 0;      
+      &_icon-link {        
         width: 24px;
         display: block;
         height: 24px;
@@ -53,15 +70,37 @@
         border: 1px solid $black;
         color: $black;
         text-align: center;
-        padding-top: 2px;
+        vertical-align: middle;
         margin-right: 5px;
         @extend %for-a;
         a:hover {
           color: $blue;
         }
       }
+    }  
   }
 }
-.circles{
-  
+
+.foto-team__links:hover {
+  .information {
+    display: block;
+  }  
+}
+
+.text-page__more-info {
+    @extend %for-a;
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+    font:{
+      family: 'FjallaOneRegular';
+      size: 16px;
+      weight: $medium;
+    }
+    text-transform: uppercase;
+    color: $activ-botton;
+  }
+.text-page__more-info_arrow {
+  padding-left: 8px;
 }
