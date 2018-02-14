@@ -68,11 +68,14 @@
 }
 
 .header__btn {
-  @extend %for-a;
   display: flex;
   .header__btn_buttons {
     @extend %for-buttons;
+    @extend %for-a;
     color: $black;
+    &:hover {
+      color: $white;
+    }
   }
 }
 

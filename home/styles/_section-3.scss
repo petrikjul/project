@@ -1,7 +1,7 @@
 .text-page {
   display: flex;
   flex-direction: column;
-  @extend %for-text-page;
+  
 }
 
 .provide-one {

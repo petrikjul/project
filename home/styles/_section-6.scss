@@ -5,7 +5,7 @@
 .text-page {
   display: flex;
   flex-direction: column;
-  @extend %for-text-page;
+  
   .text-page__info-text {
     padding-right: 44px;
     padding-left: 0;

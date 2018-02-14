@@ -4,20 +4,39 @@
   padding-top: 97px;
   padding-bottom: 107px;
 }
+
+.write {
+  background-color: $white;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 58px;
+  padding-bottom: 30px;
+  &__forms {
+    padding-left: 10px;
+  }
+}
+
 .text-page {
   display: flex;
   flex-direction: column;
-  @extend %for-text-page;
-  .text-page__info-text {
+  &__topic {
+      padding-bottom: 20px;
+    }
+  &__info-text {
+    color: $grey-in;
     padding-right: 44px;
     padding-left: 0;
+    padding-bottom: 57px;  
   }
 }
+
 .form-group-input {
   border: none;
 }  
 
 .form-control {
+  @extend %for-input;
+  font-size: 15px;  
   text-transform: uppercase;
   padding: 0;
   border-width: 0;
@@ -26,4 +45,48 @@
   border: 1px solid $border-opacity;
   border-bottom: 1px solid $blue-air;
   border-radius: 0;
+  resize: none; 
+      margin-bottom: 38px; 
 }
+
+.form-control::-webkit-input-placeholder { 
+    color: $blue-air;
+    }
+
+.nf {
+  font-size: 15px;
+  font-weight: $regular;
+  color: $black;
+  text-transform: none;    
+}
+
+.mes {
+  margin-bottom: 75px;
+}
+
+.colors {
+  color: $blue-air;
+  font-size: 12px;
+  font-weight: $regular;
+  margin-bottom: 0px;
+}
+
+.cf {
+  border-bottom: 1px solid $black;
+}
+
+.submit-button {
+  border: none;
+  @extend %for-buttons;
+  @extend %for-a;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.forms-contacts {
+  padding-top: 80px;
+  padding-left: 45px;
+}
+
