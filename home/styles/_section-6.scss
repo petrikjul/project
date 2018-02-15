@@ -5,9 +5,8 @@
 .text-page {
   display: flex;
   flex-direction: column;
-  
-  .text-page__info-text {
-    padding-right: 44px;
+  padding-right: 33px;
+  &__info-text {
     padding-left: 0;
   }
 }
@@ -49,9 +48,11 @@
   }
   &__e-mail_lok {
     @extend %for-a;
+    color: $blue-mail;
     text-decoration: underline;
-    a:hover {
-      color: $blue;
+    &:hover {
+      color: $blue-clear;
+      text-decoration: none;
     }
   }
   &__webs {

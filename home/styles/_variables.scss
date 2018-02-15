@@ -59,10 +59,12 @@ html, body {
 	line-height: 26px;
 }
 
-span {
-    font-size: 30px;	
-	font-style: italic;
-	color: $white; 
+%for-span {
+  font: {
+    family: 'Playfair Display', serif;
+    size: 18px;	
+	  style: italic;    
+  }  
 }
 
 %for-h1 {
@@ -132,26 +134,28 @@ span {
 
 
 
-.text-page__subtitle {
+
+
+.text-page {
+  &__subtitle {
     @extend %for-p;
     font-size: 12px;
     text-transform: uppercase;
     color: $grey-milk;
     padding-top: 35px;
     padding-bottom: 35px;
-}
-
-.text-page__topic {
+  }
+  &__topic {
     @extend %for-h2;
     padding-left: 0;
     padding-bottom: 60px;
-}
-
-.text-page__info-text {
+  }
+  &__info-text {
     @extend %for-p;
     font-size: 16px;
-    padding-bottom: 62px;
+    padding-bottom: 57px;
     clear: both;
+  }
 }
 
 .more-info {

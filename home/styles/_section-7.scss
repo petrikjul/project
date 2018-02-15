@@ -21,12 +21,11 @@
   flex-direction: column;
   &__topic {
       padding-bottom: 20px;
-    }
+  }
   &__info-text {
     color: $grey-in;
     padding-right: 44px;
     padding-left: 0;
-    padding-bottom: 57px;  
   }
 }
 
@@ -39,18 +38,19 @@
   font-size: 15px;  
   text-transform: uppercase;
   padding: 0;
-  border-width: 0;
   box-shadow: 0 0 0 rgba(0,0,0,.075);
   background-color: $background-opacity;
   border: 1px solid $border-opacity;
   border-bottom: 1px solid $blue-air;
   border-radius: 0;
-  resize: none; 
-      margin-bottom: 38px; 
+  resize: none;
+  overflow-x: hidden; 
+  margin-bottom: 38px; 
 }
 
 .form-control::-webkit-input-placeholder { 
     color: $blue-air;
+  text-transform: uppercase;
     }
 
 .nf {
@@ -69,6 +69,7 @@
   font-size: 12px;
   font-weight: $regular;
   margin-bottom: 0px;
+  text-transform: uppercase;
 }
 
 .cf {
@@ -86,7 +87,44 @@
 }
 
 .forms-contacts {
+  .text-page__topic {
+  padding-bottom: 0;
+  }
+  @extend %for-p;
+  font-size: 16px;
+  line-height: 20px;
   padding-top: 80px;
   padding-left: 45px;
+  &_address {    
+    font: {
+      size: 18px;
+      weight: $medium;
+    }    
+    &_medium-plus {
+      font: {
+        size: 18px;
+        weight: $medium-plus;
+      } 
+      padding-top: 30px;
+      margin-bottom: 5px; 
+    }
+  }
+  &_address_it {    
+    @extend %for-span;    
+  }
+  &_adds_mail {   
+    color: $blue-mail;
+    text-decoration: underline;
+    &:hover {
+      color: $blue-clear;
+      text-decoration: none;
+    }
+  }
+  &_adds {
+    margin-bottom: 5px;
+    &_ph {
+      padding-bottom: 25px;
+    }
+  }
 }
 

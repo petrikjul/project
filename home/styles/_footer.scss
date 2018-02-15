@@ -1,26 +1,28 @@
-.sixth{
+.footer{
   background-color: $blue-fon;
   font-size: 25px;
-  &__icon{
-    &-link{
-      padding-right: 5px;
-      padding-left: 5px;
-      color: $white;
-    }
-    &-row{
-      display: flex;
+} 
+
+.sixth {
+  &__webs {
+    display: flex;
       justify-content: center;
       align-items: center;
       padding-top: 80px;
       padding-bottom: 40px;
-    }
+    &_icon-link{
+      padding-right: 5px;
+      padding-left: 5px;
+      color: $white;
+    }  
   }
-  &__text{
+  &__text-rows {
     display: flex;
     justify-content: center;
     padding-bottom: 45px;
-    &-link{
-      font:{
+    &_text-link {
+      @extend %for-p;
+      font: {
         family: 'GothamProMedium';
         size: 14px;
       }
@@ -39,36 +41,34 @@
         padding-left: 10px;
         padding-right: 10px;
       }
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
-    }
-    &-row{
-      justify-content: center;
-    }
+    }    
   }
-  &__copy{
+  &__copies {
     padding-bottom: 70px;
-    &-text{
-      font:{
+    &_copy-text {
+      font: {
         family: 'FjallaOneRegular';
         size: 14px;
       }
       color: $grey-dark;
     }
-    &-line{
+    &_copy-line {
       margin: 0 auto;
       width: 60px;
       height: 2px;
-      background-color: $grey-dark;
-
+      background-color: $grey-dark;      
     }
   }
 }
-.fab{
+
+.fab {
   vertical-align: center;
 }
-.circle{
+
+.circle {
   display: table-cell;
   vertical-align: middle;
   width: 46px;

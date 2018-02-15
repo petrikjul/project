@@ -24,10 +24,18 @@
   }
   &__text-solutions {
     @extend %for-p;
-    font-size: 26px;
-    padding-left: 100px;
-    padding-right: 100px;
+    font: {
+      family: 'PlayfairDisplay-Regular';
+      size: 26px;
+      weight: $medium;
+    }
+    line-height: 42px;
+    padding-left: 90px;
+    padding-right: 90px;
     padding-bottom: 63px;
+    &_bolds {
+      font-weight: $bold;
+    }
   }
   &__name-marcos {
     @extend %for-p;
@@ -36,6 +44,7 @@
       size: 15px;
       weight: $medium;
     }
+    padding-top: 70px;
   }
   &__profaition {
     @extend %for-p;
