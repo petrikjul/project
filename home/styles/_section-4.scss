@@ -1,11 +1,21 @@
+/* ------------ section-4 --------------- */
 .section-4 {
   padding-top: 155px;
   padding-bottom: 300px;
 }
-.text-page {
+.technology__promotion {
   display: flex;
   flex-direction: column;
-  padding-right: 10px;
+   &_subtitle-choice {
+    @extend %for-subtitle;    
+  }
+  &_topic-choice {
+    @extend %for-topic;    
+  }
+  &_info-text-choice {
+    @extend %for-info-text; 
+    padding-bottom: 60px;   
+  }
 }
 
 .list-tech {

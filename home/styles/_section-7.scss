@@ -1,7 +1,8 @@
+/* ------------ section-7 --------------- */
 .section-7 {
   background-image: url("../img/fon-section-7.png");
   background-size: cover;
-  padding-top: 97px;
+  padding-top: 100px;
   padding-bottom: 107px;
 }
 
@@ -16,16 +17,19 @@
   }
 }
 
-.text-page {
+.communication__help {
   display: flex;
   flex-direction: column;
-  &__topic {
-      padding-bottom: 20px;
+  &_topic-mail {
+    @extend %for-topic;
+    padding-bottom: 20px;    
   }
-  &__info-text {
+  &_info-text-mail {
+    @extend %for-info-text;
     color: $grey-in;
     padding-right: 44px;
     padding-left: 0;
+    padding-bottom: 60px;    
   }
 }
 
@@ -87,8 +91,9 @@
 }
 
 .forms-contacts {
-  .text-page__topic {
-  padding-bottom: 0;
+  &_topic-mail {
+    @extend %for-topic;
+    padding-bottom: 0;
   }
   @extend %for-p;
   font-size: 16px;

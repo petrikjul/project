@@ -1,3 +1,4 @@
+/* ------------ section-1 --------------- */
 .section-1 {
    background-image: url("../img/fon-section-1.png");
    background-size: cover;
@@ -10,13 +11,13 @@
   z-index: 5;
   top: 65%;
   .general-page__buttons-vertical {
-  @extend %for-buttons-vertical;
-  transform: rotate(180deg);
-  &_icon-forma {
-    transform: rotate(90deg);
-    margin-left: 20px;
+    @extend %for-buttons-vertical;
+    transform: rotate(180deg);
+    &_icon-forma {
+      transform: rotate(90deg);
+      margin-left: 20px;
+    }
   }
-}
 }
 
 .general-page__container {
@@ -46,7 +47,6 @@
   padding-bottom: 57px;
   display: flex;
   justify-content: center;
-  
   &_vip {
     @extend %for-buttons;
     background-color: $white;
@@ -62,42 +62,10 @@
   }
   .leftb {
        padding: 12px 36px;
-    }
-  
+  }
 }
 
-/* button vertical right*/
-
-/* .general-page__container_buttons-vertical {
-  position: fixed;
-  right: 0;
-  width: 13%;
-  top: 50%;
-  z-index: 5;
-  transform: rotate(-90deg);
-  border-radius: 3px;
-  @extend %for-a;
-  font:{
-    family: 'FjallaOneRegular';
-    size: 16px;
-  }
-  text-transform: uppercase;
-  color: $white;
-  background-color: $activ-botton;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  &:hover {
-    color: $white;
-    background-color: $activ-botton-opacity;
-    text-decoration: none;
-  }
-  .icon-forma {
-    transform: rotate(90deg);
-  }
-} */
- 
-/* scroll mouse */ 
+/* --------- scroll mouse start -------- */
 #mice {
   margin: 0 auto;
   padding-bottom: 8em;
@@ -118,7 +86,6 @@
   border-bottom: 2px solid $black;
   margin: 5px 0 3px 6px;
 }
-
 
 .unu
 {
@@ -168,10 +135,11 @@
     background: $black;
     position: relative;
 }
+/* --------- scroll mouse finish -------- */
 
-/* ------------ media query --------------- */
+/* ------ media query ------ */
 @include desktop {
-  .general-page__text_btn {
+  .general-page__text_btns {
     &_buttons-left {
       width: 19%;
     }
@@ -199,7 +167,7 @@
     padding-right: 160px;
     padding-top: 95px;
   }
-  .general-page__text_btn {
+  .general-page__text_btns {
     padding-bottom: 30px;
       &_buttons-left {
       width: 25%;
@@ -212,14 +180,87 @@
 
 @include tablet {
   .general-page__text {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 55px;
+    &_main {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 65px;
+    }
+    &_topic {
+      font-size: 50px;
+      line-height: 65px;
+    }
+  }
+
+  .general-page__container {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 95px;
+  }
+  .general-page__text_btns {
+    padding-bottom: 30px;
+    &_buttons-left {
+      width: 25%;
+    }
+    &_buttons-right {
+      width: 25%;
+    }
+  }
+}
+
+@include phone {
+  .general-page__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    &_main {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 30px;
+    }
+    &_topic {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+
+  .general-page__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+
+  .general-page__text_btns {
+    padding-bottom: 0;
+    &_buttons-left {
+      width: 32%;
+    }
+    &_buttons-right {
+      width: 32%;
+    }
+  }
+}
+
+#mice {
+  padding-bottom: 4em;
+  padding-top: 1.5em;
+}
+
+@include iphone {
+  .general-page__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     &_main {
       padding-left: 82px;
       padding-right: 82px;
       padding-bottom: 52px;
     }
     &_topic {
-      font-size: 42px;
-      line-height: 64px;
+      font-size: 35px;
+      line-height: 45px;
     }
   }
 
@@ -239,9 +280,3 @@
     }
   }
 }
-
- @include phone {
-
-}
- @include iphone {
- }

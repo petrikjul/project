@@ -64,20 +64,20 @@ html, body {
   clear: both;
 }
 
-.rooted .general-page__buttons-vertical a, .more-info a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn .header__btn_buttons a, .general-page__text_btns_vip a, .provide-one__text-suggesttion_read-more a, .list-tech__product:hover .visitka a, .list-tech__product_forma a, .visitka__work_link a, .foto-team__links_we a, .information__e-mail_lok a, .information__webs_communications_icon-link a, .text-page__more-info a, .submit-button a {
+.rooted .general-page__buttons-vertical a, .text-page__more-info a, .salute__more-info-about a, .header__nav_menu_menu-li a, .submenu-li a, .header__btn .header__btn_buttons a, .general-page__text_btns_vip a, .provide-one__text-suggesttion_read-more a, .list-tech__product:hover .visitka a, .list-tech__product_forma a, .visitka__work_link a, .foto-team__links_we a, .information__e-mail_lok a, .information__webs_communications_icon-link a, .submit-button a {
   color: #000;
   text-decoration: none;
 }
-.rooted .general-page__buttons-vertical a:visited, .more-info a:visited, .header__nav_menu_menu-li a:visited, .submenu-li a:visited, .header__btn .header__btn_buttons a:visited, .general-page__text_btns_vip a:visited, .provide-one__text-suggesttion_read-more a:visited, .list-tech__product:hover .visitka a:visited, .list-tech__product_forma a:visited, .visitka__work_link a:visited, .foto-team__links_we a:visited, .information__e-mail_lok a:visited, .information__webs_communications_icon-link a:visited, .text-page__more-info a:visited, .submit-button a:visited {
+.rooted .general-page__buttons-vertical a:visited, .text-page__more-info a:visited, .salute__more-info-about a:visited, .header__nav_menu_menu-li a:visited, .submenu-li a:visited, .header__btn .header__btn_buttons a:visited, .general-page__text_btns_vip a:visited, .provide-one__text-suggesttion_read-more a:visited, .list-tech__product:hover .visitka a:visited, .list-tech__product_forma a:visited, .visitka__work_link a:visited, .foto-team__links_we a:visited, .information__e-mail_lok a:visited, .information__webs_communications_icon-link a:visited, .submit-button a:visited {
   color: #0049d7;
   text-decoration: none;
 }
-.rooted .general-page__buttons-vertical a:hover, .more-info a:hover, .header__nav_menu_menu-li a:hover, .submenu-li a:hover, .header__btn .header__btn_buttons a:hover, .general-page__text_btns_vip a:hover, .provide-one__text-suggesttion_read-more a:hover, .list-tech__product:hover .visitka a:hover, .list-tech__product_forma a:hover, .visitka__work_link a:hover, .foto-team__links_we a:hover, .information__e-mail_lok a:hover, .information__webs_communications_icon-link a:hover, .text-page__more-info a:hover, .submit-button a:hover {
+.rooted .general-page__buttons-vertical a:hover, .text-page__more-info a:hover, .salute__more-info-about a:hover, .header__nav_menu_menu-li a:hover, .submenu-li a:hover, .header__btn .header__btn_buttons a:hover, .general-page__text_btns_vip a:hover, .provide-one__text-suggesttion_read-more a:hover, .list-tech__product:hover .visitka a:hover, .list-tech__product_forma a:hover, .visitka__work_link a:hover, .foto-team__links_we a:hover, .information__e-mail_lok a:hover, .information__webs_communications_icon-link a:hover, .submit-button a:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.text-page__subtitle, .text-page__info-text, .general-page__text_main, ._team-text, .provide-one__text-suggesttion_second, .manager__text-solutions, .manager__name-marcos, .manager__profaition, .forms-contacts, .sixth__text-rows_text-link {
+.text-page__subtitle, .services__provide_subtitle-prof, .technology__promotion_subtitle-choice, .text-page__info-text, .services__provide_info-text-prof, .technology__promotion_info-text-choice, .salute__team_info-text-about, .communication__help_info-text-mail, .general-page__text_main, ._team-text, .provide-one__text-suggesttion_second, .manager__text-solutions, .manager__name-marcos, .manager__profaition, .forms-contacts, .lower__text-rows_text-link {
   font-family: 'GothamProRegular';
   font-size: 17px;
   color: #000;
@@ -102,7 +102,7 @@ html, body {
   margin: 0;
 }
 
-.text-page__topic, ._team-number {
+.text-page__topic, .services__provide_topic-prof, .technology__promotion_topic-choice, .salute__team_topic-about, .communication__help_topic-mail, .forms-contacts_topic-mail, ._team-number {
   font-family: 'FjallaOneRegular';
   font-size: 41px;
   font-weight: 500;
@@ -146,24 +146,25 @@ html, body {
   float: none;
 }
 
-.text-page__subtitle {
+.text-page__subtitle, .services__provide_subtitle-prof, .technology__promotion_subtitle-choice {
   font-size: 12px;
   text-transform: uppercase;
   color: #c2cad6;
   padding-top: 35px;
   padding-bottom: 35px;
 }
-.text-page__topic {
+
+.text-page__topic, .services__provide_topic-prof, .technology__promotion_topic-choice, .salute__team_topic-about, .communication__help_topic-mail, .forms-contacts_topic-mail {
   padding-left: 0;
   padding-bottom: 60px;
 }
-.text-page__info-text {
+
+.text-page__info-text, .services__provide_info-text-prof, .technology__promotion_info-text-choice, .salute__team_info-text-about, .communication__help_info-text-mail {
   font-size: 16px;
-  padding-bottom: 57px;
   clear: both;
 }
 
-.more-info {
+.text-page__more-info, .salute__more-info-about {
   display: block;
   padding-top: 30px;
   font-family: 'FjallaOneRegular';
@@ -172,15 +173,10 @@ html, body {
   text-transform: uppercase;
   color: #0070ed;
 }
-.more-info:hover {
+.text-page__more-info:hover, .salute__more-info-about:hover {
   color: #223569;
   text-decoration: none;
 }
-
-.arrow {
-  padding-left: 8px;
-}
-
 .header-top__container {
   padding-top: 35px;
   padding-bottom: 40px;
@@ -188,6 +184,11 @@ html, body {
 
 .header {
   background-color: #FFFFFF;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  top: 0;
 }
 
 .header__nav_menu {
@@ -264,9 +265,10 @@ html, body {
   display: block;
 }
 
-/* ...byrger start ....................................... */
+/* ---------------- byrger start ------------------ */
 .menu {
   text-align: right;
+  padding-top: 9px;
 }
 
 .menu__icon {
@@ -341,7 +343,8 @@ html, body {
   display: block;
 }
 
-/* ... byrger final ....................................... */
+/* ------ byrger final ------------------------- */
+/* ------ media query ------ */
 @media (min-width: 768px) and (max-width: 991px) {
   .gambyrger-menu__list {
     display: none;
@@ -410,13 +413,14 @@ html, body {
     z-index: 1000;
   }
 
-  .gambyrger-menu__list {
+  .choice {
     display: block;
     padding: 10px 0;
     text-align: center;
     color: #000;
   }
 }
+/* ------------ section-1 --------------- */
 .section-1 {
   background-image: url("../img/fon-section-1.png");
   background-size: cover;
@@ -487,36 +491,7 @@ html, body {
   padding: 12px 36px;
 }
 
-/* button vertical right*/
-/* .general-page__container_buttons-vertical {
-  position: fixed;
-  right: 0;
-  width: 13%;
-  top: 50%;
-  z-index: 5;
-  transform: rotate(-90deg);
-  border-radius: 3px;
-  @extend %for-a;
-  font:{
-    family: 'FjallaOneRegular';
-    size: 16px;
-  }
-  text-transform: uppercase;
-  color: $white;
-  background-color: $activ-botton;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  &:hover {
-    color: $white;
-    background-color: $activ-botton-opacity;
-    text-decoration: none;
-  }
-  .icon-forma {
-    transform: rotate(90deg);
-  }
-} */
-/* scroll mouse */
+/* --------- scroll mouse start -------- */
 #mice {
   margin: 0 auto;
   padding-bottom: 8em;
@@ -585,12 +560,13 @@ html, body {
   position: relative;
 }
 
-/* ------------ media query --------------- */
+/* --------- scroll mouse finish -------- */
+/* ------ media query ------ */
 @media (min-width: 1200px) {
-  .general-page__text_btn_buttons-left {
+  .general-page__text_btns_buttons-left {
     width: 19%;
   }
-  .general-page__text_btn_buttons-right {
+  .general-page__text_btns_buttons-right {
     width: 19%;
   }
 }
@@ -611,25 +587,99 @@ html, body {
     padding-top: 95px;
   }
 
-  .general-page__text_btn {
+  .general-page__text_btns {
     padding-bottom: 30px;
   }
-  .general-page__text_btn_buttons-left {
+  .general-page__text_btns_buttons-left {
     width: 25%;
   }
-  .general-page__text_btn_buttons-right {
+  .general-page__text_btns_buttons-right {
     width: 25%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .general-page__text {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 55px;
+  }
+  .general-page__text_main {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 65px;
+  }
+  .general-page__text_topic {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .general-page__container {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 95px;
+  }
+
+  .general-page__text_btns {
+    padding-bottom: 30px;
+  }
+  .general-page__text_btns_buttons-left {
+    width: 25%;
+  }
+  .general-page__text_btns_buttons-right {
+    width: 25%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .general-page__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  .general-page__text_main {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+  .general-page__text_topic {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .general-page__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+
+  .general-page__text_btns {
+    padding-bottom: 0;
+  }
+  .general-page__text_btns_buttons-left {
+    width: 32%;
+  }
+  .general-page__text_btns_buttons-right {
+    width: 32%;
+  }
+}
+#mice {
+  padding-bottom: 4em;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .general-page__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
   .general-page__text_main {
     padding-left: 82px;
     padding-right: 82px;
     padding-bottom: 52px;
   }
   .general-page__text_topic {
-    font-size: 42px;
-    line-height: 64px;
+    font-size: 35px;
+    line-height: 45px;
   }
 
   .general-page__container {
@@ -648,6 +698,7 @@ html, body {
     width: 32%;
   }
 }
+/* ------------ section-2 --------------- */
 .section-2 {
   background-image: url("../img/fon-section-2.2.png");
   background-size: cover;
@@ -672,10 +723,10 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 72px;
+  padding-right: 118px;
 }
-.text-page__info-text {
-  padding-bottom: 100px;
+.text-page__more-info {
+  padding-top: 90px;
 }
 
 .team-office__foto-bottom {
@@ -722,7 +773,8 @@ html, body {
 }
 
 /* ------------ media query --------------- */
-.text-page {
+/* ------------ section-3 --------------- */
+.services__provide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,12 +784,15 @@ html, body {
           flex-direction: column;
   padding-right: 40px;
 }
+.services__provide_topic-prof {
+  padding-bottom: 45px;
+}
 
 .provide-one {
   display: inline-block;
+  padding-top: 85px;
 }
 .provide-one__text-suggesttion {
-  padding-top: 30px;
   padding-bottom: 100px;
 }
 .provide-one__text-suggesttion_fotos {
@@ -773,12 +828,13 @@ html, body {
   padding-bottom: 63px;
 }
 
+/* ------------ section-4 --------------- */
 .section-4 {
   padding-top: 155px;
   padding-bottom: 300px;
 }
 
-.text-page {
+.technology__promotion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,7 +842,9 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 10px;
+}
+.technology__promotion_info-text-choice {
+  padding-bottom: 60px;
 }
 
 .list-tech {
@@ -853,6 +911,7 @@ html, body {
   text-decoration: none;
 }
 
+/* ------------ section-5 --------------- */
 .section-5 {
   background-image: url("../img/fon-section-5.png");
   background-size: cover;
@@ -872,11 +931,11 @@ html, body {
           flex-direction: column;
   background: #FFFFFF;
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
   border-radius: 5px;
 }
 .manager__fotos-door {
-  padding-bottom: 63px;
+  padding-bottom: 55px;
 }
 .manager__fotos-door_man {
   padding-left: 75px;
@@ -889,7 +948,7 @@ html, body {
   line-height: 42px;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 63px;
+  padding-bottom: 50px;
 }
 .manager__text-solutions_bolds {
   font-weight: 700;
@@ -898,7 +957,6 @@ html, body {
   font-family: 'GothamProMedium';
   font-size: 15px;
   font-weight: 500;
-  padding-top: 70px;
 }
 .manager__profaition {
   font-family: 'GothamProMedium';
@@ -938,12 +996,13 @@ html, body {
   background-color: #FFFFFF;
 }
 
+/* ------------ section-6 --------------- */
 .section-6 {
   padding-top: 145px;
-  padding-bottom: 150px;
+  padding-bottom: 145px;
 }
 
-.text-page {
+.salute__team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,17 +1010,17 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 33px;
+  padding-right: 77px;
 }
-.text-page__info-text {
-  padding-left: 0;
+.salute__team_topic-about {
+  padding-bottom: 30px;
 }
 
 .foto-team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 18px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 .foto-team__links {
@@ -1029,26 +1088,15 @@ html, body {
   display: block;
 }
 
-.text-page__more-info {
-  font-family: 'FjallaOneRegular';
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #0070ed;
-}
-.text-page__more-info:hover {
-  color: #223569;
-  text-decoration: none;
+.salute__more-info-about {
+  padding-top: 0;
 }
 
-.text-page__more-info_arrow {
-  padding-left: 8px;
-}
-
+/* ------------ section-7 --------------- */
 .section-7 {
   background-image: url("../img/fon-section-7.png");
   background-size: cover;
-  padding-top: 97px;
+  padding-top: 100px;
   padding-bottom: 107px;
 }
 
@@ -1063,7 +1111,7 @@ html, body {
   padding-left: 10px;
 }
 
-.text-page {
+.communication__help {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,13 +1120,14 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.text-page__topic {
+.communication__help_topic-mail {
   padding-bottom: 20px;
 }
-.text-page__info-text {
+.communication__help_info-text-mail {
   color: #727272;
   padding-right: 44px;
   padding-left: 0;
+  padding-bottom: 60px;
 }
 
 .form-group-input {
@@ -1142,7 +1191,7 @@ html, body {
   padding-top: 80px;
   padding-left: 45px;
 }
-.forms-contacts .text-page__topic {
+.forms-contacts_topic-mail {
   padding-bottom: 0;
 }
 .forms-contacts_address {
@@ -1170,12 +1219,13 @@ html, body {
   padding-bottom: 25px;
 }
 
+/* ------------ footer did Angelika --------------- */
 .footer {
   background-color: #151c26;
   font-size: 25px;
 }
 
-.sixth__webs {
+.lower__webs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1188,12 +1238,12 @@ html, body {
   padding-top: 80px;
   padding-bottom: 40px;
 }
-.sixth__webs_icon-link {
+.lower__webs_icon-link {
   padding-right: 5px;
   padding-left: 5px;
   color: #FFFFFF;
 }
-.sixth__text-rows {
+.lower__text-rows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1202,7 +1252,7 @@ html, body {
           justify-content: center;
   padding-bottom: 45px;
 }
-.sixth__text-rows_text-link {
+.lower__text-rows_text-link {
   font-family: 'GothamProMedium';
   font-size: 14px;
   color: white;
@@ -1210,35 +1260,35 @@ html, body {
   padding-right: 20px;
 }
 @media (max-width: 768px) {
-  .sixth__text-rows_text-link {
+  .lower__text-rows_text-link {
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media (max-width: 768px) {
-  .sixth__text-rows_text-link {
+  .lower__text-rows_text-link {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (max-width: 414px) {
-  .sixth__text-rows_text-link {
+  .lower__text-rows_text-link {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-.sixth__text-rows_text-link:hover {
+.lower__text-rows_text-link:hover {
   text-decoration: none;
 }
-.sixth__copies {
+.lower__copies {
   padding-bottom: 70px;
 }
-.sixth__copies_copy-text {
+.lower__copies_copy-text {
   font-family: 'FjallaOneRegular';
   font-size: 14px;
   color: #374152;
 }
-.sixth__copies_copy-line {
+.lower__copies_copy-line {
   margin: 0 auto;
   width: 60px;
   height: 2px;

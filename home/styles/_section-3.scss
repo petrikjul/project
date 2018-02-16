@@ -1,13 +1,24 @@
-.text-page {
+/* ------------ section-3 --------------- */
+.services__provide {
   display: flex;
   flex-direction: column;
   padding-right: 40px;
+   &_subtitle-prof {
+    @extend %for-subtitle;    
+  }
+  &_topic-prof {
+    @extend %for-topic;
+    padding-bottom: 45px;    
+  }
+  &_info-text-prof {
+    @extend %for-info-text;    
+  }
 }
 
 .provide-one {
   display: inline-block;
+  padding-top: 85px;
   &__text-suggesttion {
-     padding-top: 30px;
      padding-bottom: 100px;
      &_fotos {
         padding-bottom: 40px;
