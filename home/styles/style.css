@@ -396,7 +396,7 @@ html, body {
   }
 }
 @media (min-width: 320px) and (max-width: 575px) {
-  .gambyrger-menu__list {
+  .gambyrger-menu__list, .header__btn {
     display: none;
   }
 
@@ -456,6 +456,18 @@ html, body {
   padding-top: 205px;
   padding-bottom: 10px;
 }
+@media (min-width: 429px) and (max-width: 575px) {
+  .general-page__text {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+@media (min-width: 336px) and (max-width: 428px) {
+  .general-page__text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 .general-page__text_main {
   padding-left: 70px;
   padding-right: 70px;
@@ -475,6 +487,14 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 476px) {
+  .general-page__text_btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .general-page__text_btns_vip {
   background-color: #FFFFFF;
@@ -571,6 +591,11 @@ html, body {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .general-page__text {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 95px;
+  }
   .general-page__text_main {
     padding-left: 70px;
     padding-right: 70px;
@@ -588,45 +613,54 @@ html, body {
   }
 
   .general-page__text_btns {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
   .general-page__text_btns_buttons-left {
     width: 25%;
   }
   .general-page__text_btns_buttons-right {
     width: 25%;
+  }
+
+  #mice {
+    padding-bottom: 7em;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .general-page__text {
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 55px;
+    padding-top: 30px;
   }
   .general-page__text_main {
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
   }
   .general-page__text_topic {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 40px;
+    line-height: 55px;
   }
 
   .general-page__container {
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 140px;
+    padding-right: 140px;
     padding-top: 95px;
   }
 
   .general-page__text_btns {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
   .general-page__text_btns_buttons-left {
     width: 25%;
   }
   .general-page__text_btns_buttons-right {
     width: 25%;
+  }
+
+  #mice {
+    padding-bottom: 4em;
+    padding-top: 2.5em;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -641,13 +675,13 @@ html, body {
     padding-bottom: 30px;
   }
   .general-page__text_topic {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 45px;
   }
 
   .general-page__container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 50px;
   }
 
@@ -660,42 +694,50 @@ html, body {
   .general-page__text_btns_buttons-right {
     width: 32%;
   }
-}
-#mice {
-  padding-bottom: 4em;
-  padding-top: 1.5em;
-}
 
+  #mice {
+    padding-bottom: 4em;
+    padding-top: 1.5em;
+  }
+}
 @media (min-width: 320px) and (max-width: 575px) {
   .general-page__text {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 20px;
   }
   .general-page__text_main {
-    padding-left: 82px;
-    padding-right: 82px;
-    padding-bottom: 52px;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
   }
   .general-page__text_topic {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .general-page__container {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
   }
 
-  .general-page__text_btn {
-    padding-bottom: 10px;
+  .general-page__text_btns {
+    padding-bottom: 0;
   }
-  .general-page__text_btn_buttons-left {
+  .general-page__text_btns_vip {
+    margin-bottom: 10px;
+  }
+  .general-page__text_btns_buttons-left {
     width: 32%;
   }
-  .general-page__text_btn_buttons-right {
+  .general-page__text_btns_buttons-right {
     width: 32%;
+  }
+
+  #mice {
+    padding-bottom: 4em;
+    padding-top: 1.5em;
   }
 }
 /* ------------ section-2 --------------- */

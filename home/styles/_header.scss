@@ -199,7 +199,7 @@
 }
 
 @include iphone {
-  .gambyrger-menu__list {    
+  .gambyrger-menu__list, .header__btn {    
     display: none;
   }
   .menu__icon {
