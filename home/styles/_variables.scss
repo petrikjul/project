@@ -199,3 +199,11 @@ html, body {
     @content;
   }
 }
+@mixin mobile {
+  @media (max-width: 319px) {
+    @content;
+  }
+}
+
+
+  

@@ -9,7 +9,22 @@
   position: fixed;
   right: 0;
   z-index: 5;
-  top: 65%;
+  top: 55%;
+  @media (min-width: 722px) and (max-width: 767px){
+    top: 35%;
+  }
+  @media (min-width: 516px) and (max-width: 576px){
+    top: 26%;
+  }
+  @media (min-width: 452px) and (max-width: 515px){
+    top: 31%;
+  }
+  @media (min-width: 351px) and (max-width: 451px){
+    top: 35%;
+  }
+  @media (min-width: 320px) and (max-width: 350px){
+    top: 38%;
+  }  
   .general-page__buttons-vertical {
     @extend %for-buttons-vertical;
     transform: rotate(180deg);
@@ -18,6 +33,9 @@
       margin-left: 20px;
     }
   }
+  @media (max-width: 319px) {
+    display: none;
+  }  
 }
 
 .general-page__container {
@@ -34,8 +52,8 @@
     padding-right: 90px;
   }
   @media (min-width: 336px) and (max-width: 428px){
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   &_main {
     @extend %for-p;
@@ -48,6 +66,22 @@
     @extend %for-h1;
     font-weight: $light;
     padding-bottom: 20px;
+     @media (min-width: 428px) and (max-width: 628px){
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+    @media (min-width: 516px) and (max-width: 534px){
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+    @media (min-width: 393px) and (max-width: 427px){
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+    @media (min-width: 348px) and (max-width: 392px){
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 }
 
@@ -57,7 +91,23 @@
   justify-content: center;
   @media (max-width: 476px){
     flex-direction: column;
-  }  
+  }
+  @media (min-width: 401px) and (max-width: 476px){
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media (min-width: 381px) and (max-width: 400px){
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+  @media (min-width: 348px) and (max-width: 380px){
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media (min-width: 320px) and (max-width: 347px){
+    padding-left: 23px;
+    padding-right: 23px;
+  }    
   &_vip {
     @extend %for-buttons;
     background-color: $white;
@@ -162,8 +212,8 @@
 
 @include laptop {
   .general-page__text {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 27px;
+    padding-right: 27px;
     padding-top: 95px;
     &_main {
       padding-left: 70px;
@@ -193,12 +243,15 @@
   #mice {
     padding-bottom: 7em;
   }
+  .rooted {
+    top: 50%;
+  }
 }
 
 @include tablet {
   .general-page__text {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 30px;
     &_main {
     padding-left: 15px;
@@ -212,8 +265,8 @@
   }
 
   .general-page__container {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 130px;
+    padding-right: 130px;
     padding-top: 95px;
   }
   .general-page__text_btns {
@@ -229,6 +282,9 @@
     padding-bottom: 4em;
     padding-top: 2.5em;
   }
+  .rooted {
+    top: 40%;
+  }
 }
 
 @include phone {
@@ -242,7 +298,9 @@
       padding-bottom: 30px;
     }
     &_topic {
-      font-size: 35px;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 29px;
       line-height: 45px;
     }
   }
@@ -266,24 +324,28 @@
   padding-bottom: 4em;
   padding-top: 1.5em;
   }
+  .rooted {
+    top: 39%;
+  }
 }
 
 
 
 @include iphone {
   .general-page__text {
-    
-    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
     &_main {
       font-size: 12px;
       line-height: 20px;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 25px;
+      padding-right: 25px;
       padding-bottom: 15px;
     }
     &_topic {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 22px;
+      line-height: 31px;
     }
   }
 
@@ -310,3 +372,53 @@
   padding-top: 1.5em;
   }
 }
+
+@include mobile {
+  .general-page__text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    &_main {
+      font-size: 12px;
+      line-height: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+    }
+    &_topic {
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 80px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  .general-page__container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 70px;
+  }
+
+  .general-page__text_btns {
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    &_vip {
+      margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0;      
+    }
+    &_buttons-left {
+      width: 32%;
+    }
+    &_buttons-right {
+      width: 32%;
+    }
+  }
+  #mice {
+  padding-bottom: 4em;
+  padding-top: 1.5em;
+  }
+}
+
