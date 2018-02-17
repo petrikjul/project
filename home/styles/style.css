@@ -77,7 +77,7 @@ html, body {
   text-decoration: none;
 }
 
-.text-page__subtitle, .services__provide_subtitle-prof, .technology__promotion_subtitle-choice, .text-page__info-text, .services__provide_info-text-prof, .technology__promotion_info-text-choice, .salute__team_info-text-about, .communication__help_info-text-mail, .general-page__text_main, ._team-text, .provide-one__text-suggesttion_second, .manager__text-solutions, .manager__name-marcos, .manager__profaition, .forms-contacts, .lower__text-rows_text-link {
+.text-page__subtitle, .services__provide_subtitle-prof, .technology__promotion_subtitle-choice, .text-page__info-text, .services__provide_info-text-prof, .technology__promotion_info-text-choice, .salute__team_info-text-about, .communication__help_info-text-mail, .general-page__text_main, .office__summation_team_block-text, .provide-one__text-suggesttion_second, .manager__text-solutions, .manager__name-marcos, .manager__profaition, .forms-contacts, .lower__text-rows_text-link {
   font-family: 'GothamProRegular';
   font-size: 17px;
   color: #000;
@@ -102,7 +102,7 @@ html, body {
   margin: 0;
 }
 
-.text-page__topic, .services__provide_topic-prof, .technology__promotion_topic-choice, .salute__team_topic-about, .communication__help_topic-mail, .forms-contacts_topic-mail, ._team-number {
+.text-page__topic, .services__provide_topic-prof, .technology__promotion_topic-choice, .salute__team_topic-about, .communication__help_topic-mail, .forms-contacts_topic-mail, .office__summation_team_block-number {
   font-family: 'FjallaOneRegular';
   font-size: 41px;
   font-weight: 500;
@@ -920,10 +920,12 @@ html, body {
   padding-top: 102px;
 }
 
-.container__company-visiter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 992px) {
+  .container__company-visiter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .text-page {
@@ -940,21 +942,21 @@ html, body {
   padding-top: 90px;
 }
 
-.team-office__foto-bottom {
+.office__foto-bottom {
   padding-top: 245px;
   position: relative;
   right: 0;
   top: -80px;
 }
 
-.team-office__foto-top {
+.office__foto-top {
   position: absolute;
   top: -30px;
   left: -20px;
   z-index: 1;
 }
 
-.team-office__summation {
+.office__summation {
   position: absolute;
   bottom: 60px;
   left: 28px;
@@ -963,27 +965,37 @@ html, body {
   display: -ms-flexbox;
   display: flex;
 }
-
-.team-office__summation_team {
+.office__summation_team {
   background-color: #FFFFFF;
   margin-right: 10px;
   padding: 30px 20px 20px 20px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-._team-number {
+.office__summation_team_block-number {
   font-size: 55px;
   font-family: 'GothamProRegular';
   line-height: 55px;
 }
-
-._team-text {
+.office__summation_team_block-text {
   font-size: 13px;
   line-height: 15px;
 }
 
 /* ------------ media query --------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .office__foto-bottom {
+    right: 96px;
+  }
+
+  .office__foto-top {
+    left: -122px;
+  }
+
+  .office__summation {
+    left: -73px;
+  }
+}
 /* ------------ section-3 --------------- */
 .services__provide {
   display: -webkit-box;
