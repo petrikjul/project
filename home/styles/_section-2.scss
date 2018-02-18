@@ -8,9 +8,11 @@
   padding-top: 102px;
 }
 .container__company-visiter {
+  padding-right: 0;
+  padding-bottom: 210px;
   @media (min-width: 992px) {
     display: flex;
-  }
+  } 
 } 
 
 .text-page{
@@ -28,41 +30,64 @@
   }
   &__more-info {
     @extend %for-more-info;
-    padding-top: 90px;    
+    padding-top: 90px; 
+    padding-bottom: 60px;   
   }
 }
 
 
-.office__foto-bottom {
-  padding-top: 245px;
-  position: relative;
+.office__foto-bottom {  
+  @media (min-width: 992px) {
+    position: absolute;
+  }
   right: 0;
-  top: -80px;
+  top: 0;
+  padding-top: 245px;
 }  
 .office__foto-top {
-  position: absolute;
-  top: -30px;
-  left: -20px;
-  z-index: 1;
+  @media (min-width: 992px) {
+    position: absolute;
+    z-index: 1;
+  }
+  top: 0;
+  right: 96px;
 }
 
 .office__summation {
-  position: absolute;
-  bottom: 60px;
-  left: 28px;
-  z-index: 2;
+  @media (min-width: 992px) {
+    position: absolute;
+    z-index: 2;
+    right: 160px;
+  }
+  
+  @media (min-width: 441px) and (max-width: 575px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  bottom: -15px;    
   display: flex;  
   &_team {
+    @media (max-width: 440px) {
+      padding: 10px 4px 10px 4px;
+    }
+    @media (min-width: 441px) and (max-width: 575px) {
+      padding: 17px 7px 17px 7px;
+    }
     background-color: $white;
     margin-right: 10px;
-    padding: 30px 20px 20px 20px;
+    padding: 30px 7px 20px 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     &_block-number {
+      @media (max-width: 440px) {
+        font-size: 34px;
+        line-height: 36px;
+      }
       @extend %for-h2;
       font: {
         size: 55px;
-        family: 'GothamProRegular';
+        family: 'GothamProMedium';
       }
+      letter-spacing: 0;
       line-height: 55px;
     }
     &_block-text {
@@ -79,28 +104,197 @@
 }  
 
 @include laptop {
+  .text-page{
+    padding-right: 20px;
+  }
   .office__foto-bottom {
-    right: 96px;
+    
   }
   .office__foto-top {
-    left: -122px;
+    
   }
   .office__summation {
-    left: -73px;
+    
   }
 }      
 
 @include tablet {
-  
+  .page-one__container {
+    padding-top: 10px;
+  }
+
+  .container__company-visiter {
+    padding-bottom: 355px;
+  }
+
+  .text-page{
+    &__topic {
+      padding-bottom: 20px;   
+    }  
+    &__more-info {      
+      padding-top: 25px;
+      padding-bottom: 25px;    
+    }
+  }
+
+  .office__foto-bottom {
+    position: absolute;
+    z-index: -2;
+    padding-top: 0;
+    top: 245px;
+    left: 96px;
+  }
+  .office__foto-top {
+    position: relative;
+    left: 0;
+  }
+  .office__summation {
+    position: absolute;
+    z-index: 1;
+    bottom: -325px;
+    left: 0;
+  }
 }
 
 @include phone {
-
+  .page-one__container {
+    padding-top: 10px;
+  }
+  .text-page{
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    &__subtitle {
+      padding-top: 15px;
+      padding-bottom: 15px;    
+    }
+    &__topic {
+      font-size: 26px;
+      line-height: 38px;
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-bottom: 20px;   
+    }  
+    &__more-info {      
+      padding-top: 25px;
+      padding-bottom: 25px;    
+    }
+  }
+  .office {
+    text-align: center;
+  }
+  .office__foto-bottom {
+    padding-top: 45px;
+    position: relative;
+  }
+  .office__foto-top {
+    position: relative;
+    left: 0;
+  }
+  .office__summation {
+    position: absolute;
+    bottom: 286px;
+    left: 80px;
+  }  
 }
+
 @include iphone {
-
+.page-one__container {
+    padding-top: 0;
+  }
+  .container__company-visiter {
+    padding-bottom: 0;
+  }
+  .text-page{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    &__subtitle {
+      padding-top: 15px;
+      padding-bottom: 10px;    
+    }
+    &__topic {
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding-right: 13px;
+      padding-left: 13px;
+      padding-bottom: 10px;   
+    }
+    &__info-text {
+      font-size: 14px;
+      line-height: 20px;
+    }  
+    &__more-info {
+      font-size: 12px;      
+      padding-top: 12px;
+      padding-bottom: 25px;    
+    }
+  }
+  .office {
+    text-align: center;
+    padding: 0;
+  }
+  .office__foto-bottom {
+    display: none;
+  }
+  .office__foto-top {
+    display: none;
+  }
+  .office__summation {
+    position: static;
+    bottom: 25px;
+  }  
 }
+
 
 @include mobile {
-
+  .page-one__container {
+    padding-top: 0;
+  }
+  .container__company-visiter {
+    padding-bottom: 0;
+    padding-right: 15px;
+  }
+  .text-page{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    &__subtitle {
+      padding-top: 15px;
+      padding-bottom: 10px;    
+    }
+    &__topic {
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding-right: 13px;
+      padding-left: 13px;
+      padding-bottom: 10px;   
+    }
+    &__info-text {
+      font-size: 14px;
+      line-height: 20px;
+    }  
+    &__more-info {
+      font-size: 12px;      
+      padding-top: 12px;
+      padding-bottom: 25px;    
+    }
+  }
+  .office {
+    text-align: center;
+    padding: 0;
+  }
+  .office__foto-bottom {
+    display: none;
+  }
+  .office__foto-top {
+    display: none;
+  }
+  .office__summation {
+    display: none;
+  }
 }

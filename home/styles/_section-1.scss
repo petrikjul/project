@@ -33,7 +33,7 @@
       margin-left: 20px;
     }
   }
-  @media (max-width: 319px) {
+  @media (max-width: 510px) {
     display: none;
   }  
 }
@@ -129,7 +129,7 @@
 /* --------- scroll mouse start -------- */
 #mice {
   margin: 0 auto;
-  padding-bottom: 8em;
+  padding-bottom: 7em;
    padding-top: 5.5em;
    text-align: center;
    width: 20px;
@@ -401,10 +401,13 @@
   }
 
   .general-page__text_btns {
+    width: 68%;
+    margin: 0 auto;
     padding-bottom: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
     &_vip {
+      padding: 12px 0px;
       margin-bottom: 10px;
       margin-left: 0;
       margin-right: 0;      
