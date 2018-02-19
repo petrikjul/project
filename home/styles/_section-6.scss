@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   padding-right: 77px;
+  padding-left: 0;
   &_topic-about {
     @extend %for-topic;
     padding-bottom: 30px;    
@@ -20,6 +21,7 @@
   display: flex;
   padding-top: 70px;
   padding-bottom: 100px;
+  padding-left: 0;
   &__links {
     list-style: none;
     &_we {
@@ -35,12 +37,14 @@
   padding-bottom: 35px;
   list-style: none;
   padding-left: 12px;
+  margin-right: 21px;
   margin-bottom: 0;
   font: {
       family: 'GothamProMedium';
       size: 15px;
       weight: $medium;
     }
+  box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.2);  
   &__names {
     font: {      
       size: 19px;     
@@ -96,6 +100,7 @@
 .salute {
     &__more-info-about {
     @extend %for-more-info;
-    padding-top: 0;    
+    padding-top: 0;
+    padding-left: 0;    
   }
 }

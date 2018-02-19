@@ -1,16 +1,21 @@
 /* ------------ section-4 --------------- */
 .section-4 {
-  padding-top: 155px;
+  padding-top: 100px;
   padding-bottom: 300px;
 }
 .technology__promotion {
   display: flex;
   flex-direction: column;
-   &_subtitle-choice {
-    @extend %for-subtitle;    
+  padding-left: 0;
+  padding-right: 0;
+  &_subtitle-choice {
+    @extend %for-subtitle;
+    padding-top: 30px;
+    padding-bottom: 30px;    
   }
   &_topic-choice {
-    @extend %for-topic;    
+    @extend %for-topic;
+    padding-bottom: 40px;    
   }
   &_info-text-choice {
     @extend %for-info-text; 
@@ -24,7 +29,10 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
   &__product {
+    display: flex;
     &:hover{
       .visitka {
         display: block;
@@ -44,7 +52,7 @@
        }
        text-transform: none;
        background: $white;
-       padding: 25px 50px;
+       padding: 25px 40px;
        box-shadow: 0px 15px 35px 0px rgba(163, 174, 186, 0.2);
        @extend %for-a;
        color: $black;
@@ -62,7 +70,7 @@
   display: none;
   @extend %for-ul; 
   position: absolute;
-  top: 40px;
+  top: 73px;
   padding-left: 0;
   text-align: center;
   font:{

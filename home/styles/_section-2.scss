@@ -8,8 +8,9 @@
   padding-top: 102px;
 }
 .container__company-visiter {
+  padding-left: 0;
   padding-right: 0;
-  padding-bottom: 210px;
+  padding-bottom: 205px;
   @media (min-width: 992px) {
     display: flex;
   } 
@@ -18,7 +19,8 @@
 .text-page{
   display: flex;
   flex-direction: column;
-  padding-right: 118px;
+  padding-right: 0;
+  padding-left: 0;
   &__subtitle {
     @extend %for-subtitle;    
   }
@@ -43,6 +45,7 @@
   right: 0;
   top: 0;
   padding-top: 245px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }  
 .office__foto-top {
   @media (min-width: 992px) {
@@ -51,6 +54,7 @@
   }
   top: 0;
   right: 96px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .office__summation {
@@ -64,7 +68,7 @@
     padding-left: 50px;
     padding-right: 50px;
   }
-  bottom: -15px;    
+  bottom: -45px;    
   display: flex;  
   &_team {
     @media (max-width: 440px) {
@@ -104,6 +108,12 @@
 }  
 
 @include laptop {
+  .page-one__container {
+    padding-top: 80px;
+  }
+  .container__company-visiter {
+    padding-bottom: 80px;
+  }
   .text-page{
     padding-right: 20px;
   }
@@ -262,6 +272,7 @@
     padding-right: 0;
     text-align: center;
     &__subtitle {
+      font-size: 10px;
       padding-top: 15px;
       padding-bottom: 10px;    
     }
@@ -281,7 +292,7 @@
     &__more-info {
       font-size: 12px;      
       padding-top: 12px;
-      padding-bottom: 25px;    
+      padding-bottom: 12px;    
     }
   }
   .office {

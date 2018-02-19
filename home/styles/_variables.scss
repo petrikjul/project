@@ -1,8 +1,17 @@
 
 
 html, body {
+  font-family: 'Fjalla One', sans-serif;
+}
 
-    font-family: 'Fjalla One', sans-serif;
+.container {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 %for-buttons-vertical {  
