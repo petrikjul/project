@@ -65,7 +65,7 @@
   &_topic {
     @extend %for-h1;
     font-weight: $light;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
      @media (min-width: 428px) and (max-width: 628px){
       padding-left: 65px;
       padding-right: 65px;
@@ -212,27 +212,27 @@
 
 @include laptop {
   .general-page__text {
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 95px;
     &_main {
-      padding-left: 70px;
-      padding-right: 70px;
-      padding-bottom: 65px;
+      padding-left: 22px;
+      padding-right: 22px;
       }
     &_topic {
-      font-size: 50px;
-      line-height: 65px;
+      font-size: 65px;
+      line-height: 70px;
+      text-shadow: 1px 1px 2px $black, 0 0 1em $grey-clear;
     }
   }
 
   .general-page {
-    padding-left: 160px;
-    padding-right: 160px;
-    padding-top: 95px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 40px;
   }
   .general-page__text_btns {
-    padding-bottom: 0;
+    padding-bottom: 30px;
       &_buttons-left {
       width: 25%;
     }
@@ -261,6 +261,7 @@
     &_topic {
       font-size: 40px;
       line-height: 55px;
+      text-shadow: 1px 1px 2px $black, 0 0 1em $grey-clear;
     }
   }
 
@@ -302,6 +303,7 @@
       padding-right: 0;
       font-size: 29px;
       line-height: 45px;
+      text-shadow: 1px 1px 2px $black, 0 0 1em $grey-clear;
     }
   }
 
@@ -346,6 +348,7 @@
     &_topic {
       font-size: 22px;
       line-height: 31px;
+      text-shadow: 1px 1px 2px $black, 0 0 1em $grey-clear;
     }
   }
 
@@ -391,6 +394,7 @@
       padding-top: 80px;
       padding-left: 25px;
       padding-right: 25px;
+      text-shadow: 1px 1px 2px $black, 0 0 1em $grey-clear;
     }
   }
 

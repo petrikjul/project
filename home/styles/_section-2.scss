@@ -19,7 +19,7 @@
 .text-page{
   display: flex;
   flex-direction: column;
-  padding-right: 0;
+  padding-right: 65px;
   padding-left: 0;
   &__subtitle {
     @extend %for-subtitle;    
@@ -44,7 +44,7 @@
   }
   right: 0;
   top: 0;
-  padding-top: 245px;
+  top: 245px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }  
 .office__foto-top {
@@ -61,9 +61,8 @@
   @media (min-width: 992px) {
     position: absolute;
     z-index: 2;
-    right: 160px;
-  }
-  
+    left: -18px;
+  }  
   @media (min-width: 441px) and (max-width: 575px) {
     padding-left: 50px;
     padding-right: 50px;
@@ -115,7 +114,10 @@
     padding-bottom: 80px;
   }
   .text-page{
-    padding-right: 20px;
+    padding-right: 43px;
+    &__topic {
+      font-size: 32px;   
+    }
   }
   .office__foto-bottom {
     

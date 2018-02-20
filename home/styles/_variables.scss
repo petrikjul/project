@@ -4,9 +4,9 @@ html, body {
   font-family: 'Fjalla One', sans-serif;
 }
 
-.container {
-  padding-left: 65px;
-  padding-right: 65px;
+.container {  
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .row {
@@ -47,15 +47,19 @@ html, body {
 	a {		
 		color: $black;
     text-decoration: none;
-	}
+	}  
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
   a:visited {
     color: $blue-dark;
     text-decoration: none;
   }
-  a:hover {
-    color: $white;
+  a:focus {
+    color: $blue-dark;
     text-decoration: none;
-  }  
+  }   
 }
 
 %for-p {

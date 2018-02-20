@@ -1,4 +1,4 @@
-.header-top__container {
+.header-top {
   padding-top: 35px;
   padding-bottom: 40px;
 }
@@ -12,7 +12,7 @@
   top: 0;
 }
 
-.header__nav_menu {
+.nav__menu {
   @extend %for-ul;
   position: relative;
   list-style: none;
@@ -30,7 +30,7 @@
   line-height: 15px;
 }
 
-.header__nav_menu_menu-li { 
+.nav__menu_menu-li { 
   position: relative;
   @extend %for-a;
   a:hover {
@@ -38,7 +38,7 @@
   }
 }    
 
-.header__nav_menu_menu-li:hover {
+.nav__menu_menu-li:hover {
   .submenu {
     display: block;
   }
@@ -72,14 +72,15 @@
   text-decoration: none;
 }
 
-.header__btn {
+.nav__menu_menu-li_btn {
   display: flex;
-  .header__btn_buttons {
-    @extend %for-buttons;
-    @extend %for-a;
+  &_buttons {
+    @extend %for-buttons;    
     color: $black;
+    @extend %for-a;
     &:hover {
       color: $white;
+      text-decoration: none;
     }
   }
 }
@@ -200,7 +201,7 @@
 }
 
 @include iphone {
-  .gambyrger-menu__list, .header__btn {    
+  .gambyrger-menu__list, .nav__btn {    
     display: none;
   }
   .menu__icon {
@@ -223,7 +224,7 @@
 }
 
 @include mobile {
-  .gambyrger-menu__list, .header__btn {    
+  .gambyrger-menu__list, .nav__btn {    
     display: none;
   }
   .menu__icon {

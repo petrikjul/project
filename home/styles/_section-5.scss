@@ -1,13 +1,15 @@
 /* ------------ section-5 --------------- */
 .section-5 {
-  background-image: url("../img/fon-section-5.png");
-  background-size: cover;
+  background: url("../img/fon-section-5.png") 100% 100% no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  overflow: hidden;
   padding-top: 105px;
-  padding-bottom: 80px;
+  padding-bottom: 88px;
 }
 
 .manager {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -61,7 +63,7 @@
   display: flex;
   justify-content: center;
   padding-top: 82px;
-  padding-bottom: 87px;
+  margin-bottom: 0;
   &__as {
     cursor: pointer;
     height: 16px;
