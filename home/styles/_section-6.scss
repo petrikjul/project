@@ -1,7 +1,7 @@
 /* ------------ section-6 --------------- */
 .section-6 {
   padding-top: 145px;
-  padding-bottom: 145px;
+  margin-bottom: 145px;
 }
 .salute__team {
   display: flex;
@@ -24,8 +24,8 @@
   padding-left: 0;
   &__links {
     list-style: none;
+    padding-right: 37px;
     &_we {
-      padding-right: 20px;
       @extend %for-a;
     }
   }
@@ -37,7 +37,6 @@
   padding-bottom: 35px;
   list-style: none;
   padding-left: 12px;
-  margin-right: 21px;
   margin-bottom: 0;
   font: {
       family: 'GothamProMedium';
@@ -103,4 +102,37 @@
     padding-top: 0;
     padding-left: 0;    
   }
+}
+
+/* ------ media query ------ */
+@include desktop {
+  
+}
+
+@include laptop {
+  .foto-team {
+    justify-content: space-around;
+    padding-right: 0;
+    &__links {
+      padding-right: 0;
+    }
+  }
+  .box-girl {
+    display: none;
+  }  
+}
+
+@include tablet {
+    
+}
+
+@include phone {
+  
+}
+
+@include iphone {
+}
+
+@include mobile {  
+ 
 }

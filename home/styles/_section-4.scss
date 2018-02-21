@@ -1,7 +1,7 @@
 /* ------------ section-4 --------------- */
 .section-4 {
   padding-top: 100px;
-  padding-bottom: 300px;
+  margin-bottom: 310px;
 }
 .technology__promotion {
   display: flex;
@@ -28,9 +28,9 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 0;
   &__product {
     display: flex;
     &:hover{
@@ -99,4 +99,34 @@
   }
 }
 
+/* ------ media query ------ */
+@include desktop {
+  .visitka {  
+    &__work {    
+      width: 150px;
+      &_link {      
+        padding: 10px;      
+      }
+    }
+  }  
+}
+
+@include laptop {
+    
+}
+
+@include tablet {
+    
+}
+
+@include phone {
+  
+}
+
+@include iphone {
+}
+
+@include mobile {  
+ 
+}
 

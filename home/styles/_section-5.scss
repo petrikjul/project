@@ -1,11 +1,9 @@
 /* ------------ section-5 --------------- */
 .section-5 {
-  background: url("../img/fon-section-5.png") 100% 100% no-repeat;
-  background-size: contain;
+  background: url("../img/fon-section-5.png") 50% no-repeat;
+  background-size: cover;
   box-sizing: border-box;
-  overflow: hidden;
   padding-top: 105px;
-  padding-bottom: 88px;
 }
 
 .manager {
@@ -63,7 +61,7 @@
   display: flex;
   justify-content: center;
   padding-top: 82px;
-  margin-bottom: 0;
+  margin-bottom: 88px;
   &__as {
     cursor: pointer;
     height: 16px;
@@ -84,4 +82,28 @@
       background-color: $white;
     }
   }
+}
+
+/* ------ media query ------ */
+@include desktop {
+  
+}
+
+@include laptop {
+    
+}
+
+@include tablet {
+    
+}
+
+@include phone {
+  
+}
+
+@include iphone {
+}
+
+@include mobile {  
+ 
 }
