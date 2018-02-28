@@ -19,7 +19,7 @@
 .text-page{
   display: flex;
   flex-direction: column;
-  padding-right: 65px;
+  padding-right: 80px;
   padding-left: 0;
   &__subtitle {
     @extend %for-subtitle;    
@@ -38,37 +38,27 @@
 }
 
 
-.office__foto-bottom {  
-  @media (min-width: 992px) {
-    position: absolute;
-  }
+.office__foto-bottom {   
+  position: absolute;
   right: 0;
   top: 0;
   top: 245px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }  
-.office__foto-top {
-  @media (min-width: 992px) {
-    position: absolute;
-    z-index: 1;
-  }
+.office__foto-top {  
+  position: absolute;
+  z-index: 1;  
   top: 0;
   right: 96px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .office__summation {
-  @media (min-width: 992px) {
-    position: absolute;
-    z-index: 2;
-    left: -18px;
-  }  
-  @media (min-width: 441px) and (max-width: 575px) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  bottom: -45px;    
   display: flex;  
+  position: absolute;
+  z-index: 2;
+  left: -18px;  
+  bottom: -45px;    
   &_team {
     @media (max-width: 440px) {
       padding: 10px 4px 10px 4px;
@@ -109,12 +99,14 @@
 @include laptop {
   .page-one__container {
     padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .container__company-visiter {
     padding-bottom: 80px;
   }
   .text-page{
-    padding-right: 60px;
+    padding-right: 50px;
     &__topic {
       font-size: 32px;   
     }
@@ -126,8 +118,8 @@
     right: 0;
   }
   .office__summation {
-    left: -50px;
-    bottom: 217px;
+    left: -32px;
+    bottom: 200px;
   }
 }      
 

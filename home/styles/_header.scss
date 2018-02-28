@@ -154,6 +154,13 @@
 /* ------ byrger final ------------------------- */
 
 /* ------ media query ------ */
+@include laptop {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @include tablet {
   .gambyrger-menu__list {    
     display: none;

@@ -38,13 +38,7 @@
   }  
 }
 
-.general-page {
-  margin: 0 auto;
-}
-
 .general-page__text {
-  padding-left: 70px;
-  padding-right: 70px;
   padding-top: 205px;
   @media (min-width: 429px) and (max-width: 575px){
     padding-left: 90px;
@@ -56,14 +50,16 @@
   }
   &_main {
     @extend %for-p;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 95px;
+    padding-right: 95px;
     padding-bottom: 65px;
     font-weight: $medium-plus;
   }
   &_topic {
     @extend %for-h1;
     font-weight: $light;
+    padding-left: 35px;
+    padding-right: 35px;
     padding-bottom: 27px;
      @media (min-width: 428px) and (max-width: 628px){
       padding-left: 65px;
@@ -211,24 +207,20 @@
 
 @include laptop {
   .general-page__text {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 95px;
+    padding-top: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
     &_main {
-      padding-left: 22px;
-      padding-right: 22px;
+      padding-left: 47px;
+      padding-right: 47px;
       }
     &_topic {
       font-size: 65px;
       line-height: 70px;
+      padding-left: 0;
+      padding-right: 0;
       text-shadow: 1px 1px 2px $black, 0 0 1em $grey-clear;
     }
-  }
-
-  .general-page {
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 40px;
   }
   .general-page__text_btns {
     padding-bottom: 30px;
@@ -265,8 +257,8 @@
   }
 
   .general-page {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 95px;
   }
   .general-page__text_btns {

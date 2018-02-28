@@ -31,6 +31,9 @@
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 0;
+  @media (min-width: 992px) and (max-width: 1070px) {
+    justify-content: start;
+  }
   &__product {
     display: flex;
     &:hover{
@@ -43,8 +46,8 @@
         }
       }    
     }      
-     &_forma {
-       @extend %for-buttons;
+    &_forma {
+      @extend %for-buttons;
        font:{
          family: 'GothamProMedium';
          size: 15px;
@@ -112,7 +115,20 @@
 }
 
 @include laptop {
-    
+  .list-tech {      
+    &__product {
+      margin-left: 5px;
+      margin-right: 5px;
+      .visitka {
+        &__work {
+          width: 157px;
+        }
+      }  
+      &_forma {      
+         padding: 25px 36px;
+      }
+    }
+  }
 }
 
 @include tablet {
