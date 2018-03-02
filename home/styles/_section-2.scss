@@ -11,7 +11,7 @@
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 205px;
-  @media (min-width: 992px) {
+  @media (min-width: 993px) {
     display: flex;
   } 
 } 
@@ -119,7 +119,7 @@
   }
   .office__summation {
     left: -32px;
-    bottom: 200px;
+        bottom: -360px;
   }
 }      
 

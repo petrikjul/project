@@ -176,12 +176,15 @@
 }
 
 .mouse {
-    height: 30px;
-    width: 22px;
-    border-radius: 10px;
-    transform: none;
-    border: 2px solid $black;
-    top: 170px;
+  height: 30px;
+  width: 22px;
+  border-radius: 10px;
+  transform: none;
+  border: 2px solid $black;
+  top: 170px;
+  &:hover {
+    background: $activ-botton-opacity;
+  }
 }
 .wheel {
     height: 5px;

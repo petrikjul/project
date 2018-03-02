@@ -41,6 +41,10 @@
 .nav__menu_menu-li:hover {
   .submenu {
     display: block;
+    @extend %for-a;
+    a:hover {
+      color: $activ-botton;
+    }
   }
 }
 
@@ -51,25 +55,22 @@
   width: 120px;
   top: 35px;
   padding-left: 0;
-  background-color: white;
+  background-color: $white;
   text-align: center;
 }
 
 .submenu-li {
   display: block;
   @extend %for-a;
-  a:hover {
-    color: $black;
-  }
+  color: $black;
   border-bottom: 1px solid $grey-light;
-}
-
-.submenu-a {      
-  display: block;
-  padding: 10px;
-  color: white;
-  background-color: $white;
-  text-decoration: none;
+  .submenu-a {      
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: $white;
+    text-decoration: none;
+  }
 }
 
 .nav__menu_menu-li_btn {

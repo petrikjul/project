@@ -14,6 +14,18 @@
   padding-bottom: 30px;
   &__forms {
     padding-left: 10px;
+    &_contact-submit {
+      border: none;
+      @extend %for-buttons;      
+      &_arrow-wh {
+        @extend %for-a;
+        color: $black;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
@@ -80,15 +92,16 @@
   border-bottom: 1px solid $black;
 }
 
-.submit-button {
+/* .submit-button {
   border: none;
   @extend %for-buttons;
   @extend %for-a;
+  color: $black;
   &:hover {
     color: $white;
     text-decoration: none;
   }
-}
+} */
 
 .forms-contacts {
   &_topic-mail {
