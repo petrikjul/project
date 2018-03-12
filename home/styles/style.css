@@ -32,9 +32,11 @@ html, body {
   font-family: 'Fjalla One', sans-serif;
 }
 
-.container {
-  padding-left: 50px;
-  padding-right: 50px;
+@media (min-width: 1201px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .row {
@@ -74,19 +76,21 @@ html, body {
   clear: both;
 }
 
-.rooted .general-page__buttons-vertical a, .text-page__more-info a, .salute__more-info-about a, .nav__menu_menu-li a, .nav__menu_menu-li:hover .submenu a, .submenu-li a, .nav__menu_menu-li_btn_buttons a, .general-page__text_btns_vip a, .provide-one__text-suggesttion_read-more a, .list-tech__product_forma a, .visitka__work_link a, .foto-team__links_we a, .information__e-mail_lok a, .information__webs_communications_icon-link a, .write__forms_contact-submit_arrow-wh a {
+.rooted .general-page__buttons-vertical, .text-page__more-info, .salute__more-info-about, .nav__menu_menu-li, .submenu-li, .nav__menu_menu-li_btn_buttons, .general-page__text_btns_vip, .provide-one__text-suggesttion_read-more, .list-tech__product_forma, .visitka, .foto-team__links_we, .information__e-mail_lok, .information__webs_communications_icon-link, .submit-button {
+  /* a:visited {
+    color: $blue-dark;
+    text-decoration: none;
+  } */
+}
+.rooted .general-page__buttons-vertical a, .text-page__more-info a, .salute__more-info-about a, .nav__menu_menu-li a, .submenu-li a, .nav__menu_menu-li_btn_buttons a, .general-page__text_btns_vip a, .provide-one__text-suggesttion_read-more a, .list-tech__product_forma a, .visitka a, .foto-team__links_we a, .information__e-mail_lok a, .information__webs_communications_icon-link a, .submit-button a {
   color: #000;
   text-decoration: none;
 }
-.rooted .general-page__buttons-vertical a:hover, .text-page__more-info a:hover, .salute__more-info-about a:hover, .nav__menu_menu-li a:hover, .nav__menu_menu-li:hover .submenu a:hover, .submenu-li a:hover, .nav__menu_menu-li_btn_buttons a:hover, .general-page__text_btns_vip a:hover, .provide-one__text-suggesttion_read-more a:hover, .list-tech__product_forma a:hover, .visitka__work_link a:hover, .foto-team__links_we a:hover, .information__e-mail_lok a:hover, .information__webs_communications_icon-link a:hover, .write__forms_contact-submit_arrow-wh a:hover {
+.rooted .general-page__buttons-vertical a:hover, .text-page__more-info a:hover, .salute__more-info-about a:hover, .nav__menu_menu-li a:hover, .submenu-li a:hover, .nav__menu_menu-li_btn_buttons a:hover, .general-page__text_btns_vip a:hover, .provide-one__text-suggesttion_read-more a:hover, .list-tech__product_forma a:hover, .visitka a:hover, .foto-team__links_we a:hover, .information__e-mail_lok a:hover, .information__webs_communications_icon-link a:hover, .submit-button a:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
-.rooted .general-page__buttons-vertical a:visited, .text-page__more-info a:visited, .salute__more-info-about a:visited, .nav__menu_menu-li a:visited, .nav__menu_menu-li:hover .submenu a:visited, .submenu-li a:visited, .nav__menu_menu-li_btn_buttons a:visited, .general-page__text_btns_vip a:visited, .provide-one__text-suggesttion_read-more a:visited, .list-tech__product_forma a:visited, .visitka__work_link a:visited, .foto-team__links_we a:visited, .information__e-mail_lok a:visited, .information__webs_communications_icon-link a:visited, .write__forms_contact-submit_arrow-wh a:visited {
-  color: #0049d7;
-  text-decoration: none;
-}
-.rooted .general-page__buttons-vertical a:focus, .text-page__more-info a:focus, .salute__more-info-about a:focus, .nav__menu_menu-li a:focus, .nav__menu_menu-li:hover .submenu a:focus, .submenu-li a:focus, .nav__menu_menu-li_btn_buttons a:focus, .general-page__text_btns_vip a:focus, .provide-one__text-suggesttion_read-more a:focus, .list-tech__product_forma a:focus, .visitka__work_link a:focus, .foto-team__links_we a:focus, .information__e-mail_lok a:focus, .information__webs_communications_icon-link a:focus, .write__forms_contact-submit_arrow-wh a:focus {
+.rooted .general-page__buttons-vertical a:focus, .text-page__more-info a:focus, .salute__more-info-about a:focus, .nav__menu_menu-li a:focus, .submenu-li a:focus, .nav__menu_menu-li_btn_buttons a:focus, .general-page__text_btns_vip a:focus, .provide-one__text-suggesttion_read-more a:focus, .list-tech__product_forma a:focus, .visitka a:focus, .foto-team__links_we a:focus, .information__e-mail_lok a:focus, .information__webs_communications_icon-link a:focus, .submit-button a:focus {
   color: #0049d7;
   text-decoration: none;
 }
@@ -138,7 +142,7 @@ html, body {
   color: #000;
 }
 
-.nav__menu_menu-li_btn_buttons, .general-page__text_btns_vip, .list-tech__product_forma, .write__forms_contact-submit {
+.nav__menu_menu-li_btn_buttons, .general-page__text_btns_vip, .list-tech__product_forma, .submit-button {
   font-family: 'FjallaOneRegular';
   font-size: 16px;
   text-transform: uppercase;
@@ -236,9 +240,6 @@ html, body {
 .nav__menu_menu-li:hover .submenu {
   display: block;
 }
-.nav__menu_menu-li:hover .submenu a:hover {
-  color: #0070ed;
-}
 
 .submenu {
   display: none;
@@ -246,16 +247,19 @@ html, body {
   width: 120px;
   top: 35px;
   padding-left: 0;
-  background-color: #FFFFFF;
+  background-color: white;
   text-align: center;
 }
 
 .submenu-li {
   display: block;
-  color: #000;
   border-bottom: 1px solid #dedddd;
 }
-.submenu-li .submenu-a {
+.submenu-li a:hover {
+  color: #000;
+}
+
+.submenu-a {
   display: block;
   padding: 10px;
   color: white;
@@ -361,13 +365,18 @@ html, body {
 
 /* ------ byrger final ------------------------- */
 /* ------ media query ------ */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav__menu {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .gambyrger-menu__list {
     display: none;
   }
@@ -392,7 +401,7 @@ html, body {
     color: #000;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .gambyrger-menu__list {
     display: none;
   }
@@ -417,7 +426,7 @@ html, body {
     color: #000;
   }
 }
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .gambyrger-menu__list, .nav__btn {
     display: none;
   }
@@ -442,7 +451,7 @@ html, body {
     color: #000;
   }
 }
-@media (max-width: 319px) {
+@media (max-width: 319.98px) {
   .gambyrger-menu__list, .nav__btn {
     display: none;
   }
@@ -690,9 +699,6 @@ html, body {
   border: 2px solid #000;
   top: 170px;
 }
-.mouse:hover {
-  background: rgba(0, 112, 237, 0.6);
-}
 
 .wheel {
   height: 5px;
@@ -713,7 +719,7 @@ html, body {
     width: 19%;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .general-page__text {
     padding-top: 200px;
     padding-left: 60px;
@@ -749,7 +755,7 @@ html, body {
     top: 50%;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .general-page__text {
     padding-left: 0;
     padding-right: 0;
@@ -791,7 +797,7 @@ html, body {
     top: 40%;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .general-page__text {
     padding-left: 20px;
     padding-right: 20px;
@@ -835,7 +841,7 @@ html, body {
     top: 39%;
   }
 }
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .general-page__text {
     padding-left: 20px;
     padding-right: 20px;
@@ -878,7 +884,7 @@ html, body {
     padding-top: 1.5em;
   }
 }
-@media (max-width: 319px) {
+@media (max-width: 319.98px) {
   .general-page__text {
     padding-left: 0;
     padding-right: 0;
@@ -947,7 +953,7 @@ html, body {
   padding-right: 0;
   padding-bottom: 205px;
 }
-@media (min-width: 993px) {
+@media (min-width: 992px) {
   .container__company-visiter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,6 +1004,12 @@ html, body {
   left: -18px;
   bottom: -45px;
 }
+@media (max-width: 1199.98px) {
+  .office__summation {
+    left: -29px;
+    bottom: 200px;
+  }
+}
 .office__summation_team {
   background-color: #FFFFFF;
   margin-right: 10px;
@@ -1010,7 +1022,7 @@ html, body {
     padding: 10px 4px 10px 4px;
   }
 }
-@media (min-width: 441px) and (max-width: 575px) {
+@media (min-width: 441px) and (max-width: 575.98px) {
   .office__summation_team {
     padding: 17px 7px 17px 7px;
   }
@@ -1033,15 +1045,13 @@ html, body {
 }
 
 /* ------------ media query --------------- */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .page-one__container {
     padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .container__company-visiter {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
 
   .text-page {
@@ -1058,13 +1068,8 @@ html, body {
   .office__foto-top {
     right: 0;
   }
-
-  .office__summation {
-    left: -32px;
-    bottom: -360px;
-  }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .page-one__container {
     padding-top: 10px;
   }
@@ -1079,6 +1084,7 @@ html, body {
   .text-page__more-info {
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 150px;
   }
 
   .office__foto-bottom {
@@ -1101,7 +1107,7 @@ html, body {
     left: 0;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .page-one__container {
     padding-top: 10px;
   }
@@ -1147,7 +1153,7 @@ html, body {
     left: 80px;
   }
 }
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .page-one__container {
     padding-top: 0;
   }
@@ -1202,7 +1208,7 @@ html, body {
     bottom: 25px;
   }
 }
-@media (max-width: 319px) {
+@media (max-width: 319.98px) {
   .page-one__container {
     padding-top: 0;
   }
@@ -1335,7 +1341,7 @@ html, body {
 }
 
 /* ------ media query ------ */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .services__provide {
     padding-right: 0;
   }
@@ -1358,7 +1364,7 @@ html, body {
     clear: left;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .services__provide {
     padding-right: 153px;
   }
@@ -1384,7 +1390,7 @@ html, body {
     padding-bottom: 50px;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .services__provide {
     text-align: center;
     padding-left: 40px;
@@ -1431,7 +1437,7 @@ html, body {
     padding-left: 22px;
   }
 }
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .services__provide {
     text-align: center;
     padding-left: 50px;
@@ -1491,7 +1497,7 @@ html, body {
     padding-left: 22px;
   }
 }
-@media (max-width: 319px) {
+@media (max-width: 319.98px) {
   .services__provide {
     text-align: center;
     padding-left: 40px;
@@ -1604,10 +1610,6 @@ html, body {
 .list-tech__product:hover .visitka {
   display: block;
 }
-.list-tech__product:hover .visitka a:hover {
-  color: #0070ed;
-  text-decoration: none;
-}
 .list-tech__product_forma {
   font-family: 'GothamProMedium';
   font-size: 15px;
@@ -1634,6 +1636,12 @@ html, body {
   font-family: 'GothamProMedium';
   font-size: 15px;
   font-weight: 500;
+  color: #000;
+}
+.visitka a:hover {
+  display: block;
+  color: #0070ed;
+  text-decoration: none;
 }
 .visitka__work {
   display: block;
@@ -1645,8 +1653,6 @@ html, body {
 .visitka__work_link {
   display: block;
   padding: 10px;
-  color: #000;
-  text-decoration: none;
 }
 
 /* ------ media query ------ */
@@ -1658,16 +1664,35 @@ html, body {
     padding: 10px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .list-tech__product {
     margin-left: 5px;
     margin-right: 5px;
   }
   .list-tech__product .visitka__work {
-    width: 140px;
+    width: 157px;
   }
   .list-tech__product_forma {
     padding: 25px 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .list-tech {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-tech__product {
+    padding-bottom: 20px;
+  }
+  .list-tech__product_forma {
+    width: 200px;
+  }
+
+  .visitka {
+    top: inherit;
+    left: 225px;
   }
 }
 /* ------------ section-5 --------------- */
@@ -1805,10 +1830,22 @@ html, body {
       -ms-flex-pack: start;
           justify-content: start;
 }
-@media (min-width: 992px) and (max-width: 1070px) {
+@media (min-width: 700px) and (max-width: 1070px) {
   .foto-team {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+@media (max-width: 699.68px) {
+  .foto-team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
   }
 }
 .foto-team__links {
@@ -1817,6 +1854,11 @@ html, body {
 @media (min-width: 1070px) {
   .foto-team__links {
     margin-right: 20px;
+  }
+}
+@media (max-width: 699.68px) {
+  .foto-team__links {
+    padding-top: 40px;
   }
 }
 
@@ -1890,18 +1932,19 @@ html, body {
   padding-top: 0;
   padding-left: 0;
 }
+@media (min-width: 576px) and (max-width: 1069.98px) {
+  .salute__more-info-about {
+    padding-left: 150px;
+  }
+}
 
 /* ------ media query ------ */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .foto-team {
     padding-right: 0;
   }
   .foto-team__links {
     padding-right: 0;
-  }
-
-  .salute__more-info-about {
-    padding-left: 85px;
   }
 }
 /* ------------ section-7 --------------- */
@@ -1921,16 +1964,6 @@ html, body {
 }
 .write__forms {
   padding-left: 10px;
-}
-.write__forms_contact-submit {
-  border: none;
-}
-.write__forms_contact-submit_arrow-wh {
-  color: #000;
-}
-.write__forms_contact-submit_arrow-wh:hover {
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 .communication__help {
@@ -1999,16 +2032,14 @@ html, body {
   border-bottom: 1px solid #000;
 }
 
-/* .submit-button {
+.submit-button {
   border: none;
-  @extend %for-buttons;
-  @extend %for-a;
-  color: $black;
-  &:hover {
-    color: $white;
-    text-decoration: none;
-  }
-} */
+}
+.submit-button:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .forms-contacts {
   font-size: 16px;
   line-height: 20px;

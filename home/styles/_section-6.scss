@@ -33,16 +33,24 @@
   padding-bottom: 100px;
   padding-left: 0;
   justify-content: start;  
-  @media (min-width: 992px) and (max-width: 1070px) {
+  @media (min-width: 700px) and (max-width: 1070px) {
     justify-content: space-around;
+  }
+  @media (max-width: 699.68px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
   }   
   &__links {
     list-style: none;    
     @media (min-width: 1070px) {
       margin-right: 20px;
     }
+    @media (max-width: 699.68px) {
+      padding-top: 40px;
+    }
     &_we {
-      @extend %for-a;
+      @extend %for-a;      
     }
   }
 }
@@ -122,7 +130,10 @@
     &__more-info-about {
     @extend %for-more-info;
     padding-top: 0;
-    padding-left: 0;    
+    padding-left: 0; 
+    @media (min-width: 576px) and (max-width: 1069.98px) {
+      padding-left: 150px;
+    }  
   }
 }
 
@@ -137,16 +148,13 @@
     &__links {
       padding-right: 0;
     }
-  }
-  .salute {
-    &__more-info-about {    
-    padding-left: 85px;    
-  }
-}    
+  }    
 }
 
 @include tablet {
+  .foto-team {
     
+  }  
 }
 
 @include phone {
